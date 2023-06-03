@@ -1,0 +1,344 @@
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 104px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+    background-color: var(--white-color);
+    z-index: 1;
+}
+
+header .icon-menu {
+    display: none;
+    
+    cursor: pointer;
+}
+
+header .icon-menu i {
+    color: var(--dark-green);
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 3px;
+    border: 2px solid var(--dark-green);
+}
+
+header .icon-menu:hover i {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+header .logo-img {
+    width: 110px;
+    padding: 16px 0;
+}
+
+header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    align-items: center;
+    gap: 32px;
+}
+
+header .navbar .navbar-item {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .navbar .navbar-item .user-name,
+header .navbar .navbar-item .item-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark-green);
+    display: block;
+}
+
+header .navbar .navbar-item .user-name,
+header .navbar .navbar-item .item-text {
+    position: relative;
+}
+
+header .navbar .user-section .user-name::after,
+header .navbar-item .item-text::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 250%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+header .user-section:hover .user-name::after,
+header .navbar-item:hover .item-text::after {
+    width: 100%;
+}
+
+header .navbar-item .favourite>i {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+header .navbar-item .favourite {
+    border-right: 3px solid var(--dark-green);
+    padding-right: 12px;
+}
+
+header .navbar .user-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .navbar .user-section .active-status {
+    position: absolute;
+    top: 45px;
+    left: 32px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+header .navbar-item .user-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header .navbar .user-section:hover .card-information {
+    visibility: visible;
+    top: 74px;
+    opacity: 1;
+}
+
+header .navbar .user-section .card-information {
+    padding: 32px;
+    position: absolute;
+    top: 83px;
+    left: -200px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 329px;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header .navbar .card-information .user-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar .card-information .user-profile .user-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.navbar .card-information .user-profile .user-info .name {
+    font-size: 16px;
+}
+
+header .menu-mobile .user-profile .user-info .status,
+.navbar .card-information .user-profile .user-info .status {
+    font-size: 14px;
+    margin-top: 4px;
+    opacity: 0.75;
+}
+
+header .navbar .card-information .card-btns {
+    border-top: 0.5px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    margin-top: 24px;
+}
+
+header .menu-mobile .card-btns .item-btn,
+header .navbar .card-information .card-btns .item-btn {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .card-information .card-btns .item-btn:hover {
+    color: var(--primary-color) !important;
+}
+
+.navbar .card-information .card-btns .item-btn:hover>i {
+    transform: translateX(3px);
+    transition: all 0.3s;
+}
+
+header .menu-mobile .card-btns .item-btn .btn-name,
+.navbar .card-information .card-btns .item-btn .btn-name {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.navbar .card-information .card-btns .item-btn:not(:first-child) {
+    margin-top: 20px;
+}
+
+header .menu-mobile.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+header .menu-mobile.active .content-wrapper {
+    right: 0;
+    opacity: 1;
+}
+
+header .menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    z-index: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+header .menu-mobile .content-wrapper {
+    width: 60%;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: -60%;
+    z-index: 3;
+    padding: 40px 32px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+header .menu-mobile .user-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    padding: 0 8px;
+    margin-bottom: 40px;
+}
+
+header .menu-mobile .user-profile .user-info .name {
+    font-size: 20px;
+}
+
+header .menu-mobile .user-profile .user-status {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 58px;
+}
+
+header .menu-mobile .user-profile .user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header .menu-mobile .card-btns {
+    border-top: 0.5px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+}
+
+header .menu-mobile .card-btns .item-btn {
+    font-size: 16px;
+    padding: 20px 8px;
+    border-radius: 10px;
+}
+
+header .menu-mobile .card-btns .item-btn:hover {
+    background-color: var(--light-green);
+}
+
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    header {
+        padding: 0px 72px;
+    }
+}
+
+@media only screen and (max-width: 739px) {
+    header {
+        padding: 0px 48px;
+    }
+
+    header .navbar {
+        display: none;
+    }
+
+    header .icon-menu {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 0px 32px;
+    }
+
+    header .menu-mobile .content-wrapper {
+        padding: 24px;
+        width: 75%;
+    }
+
+    header .menu-mobile .user-profile .user-info .name {
+        font-size: 16px;
+    }
+
+    header .menu-mobile .user-profile .user-avatar {
+        width: 64px;
+        height: 64px;
+    }
+
+    header .menu-mobile .user-profile {
+        padding: 0 4px;
+        gap: 24px;
+    }
+
+    header .menu-mobile .card-btns .item-btn {
+        font-size: 14px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    header .menu-mobile .card-btns .item-btn .btn-name {
+        font-size: 15px;
+    }
+
+}
