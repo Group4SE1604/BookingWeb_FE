@@ -99,7 +99,7 @@ html {
 
 
 /* nhớ xóa cái này */
-.main-conent {
+.main-content {
     margin-top: 73px;
 }
 
@@ -119,6 +119,7 @@ header {
     align-items: center;
     box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
     background-color: var(--white-color);
+    z-index:9;
 }
 
 header .logo-img {
