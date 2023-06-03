@@ -7,7 +7,7 @@
     --light-green: #CDEAE1;
     --white-color: #ffffff;
     --dark-color: #1C1B1F;
-
+    --light-color:#FAFBFC;
 }
 
 * {
@@ -66,6 +66,10 @@ html {
 
 .bg-light-green {
     background-color: var(--light-green);
+}
+
+.bg-main {
+    background-color: var(--light-color);
 }
 
 .btn {
