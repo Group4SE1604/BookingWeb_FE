@@ -1,198 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Link font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <!-- Link css -->
-     <link rel="stylesheet" href="./css/base.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/account.css" />
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/base.css" />
     <title>Account profile</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-wrapper">
-        <!-- header -->
-        <header>
-            <div class="logo">
-                <img src="./images/header_logo.svg" alt="logo-image" class="logo-img">
-            </div>
-            <ul class="navbar">
-                <!-- <li class="navbar-item"><a href="#" class="item-text">Login</a></li>
+      <!-- header -->
+      <header>
+        <div class="logo">
+          <img
+            src="./images/header_logo.svg"
+            alt="logo-image"
+            class="logo-img"
+          />
+        </div>
+        <ul class="navbar">
+          <!-- <li class="navbar-item"><a href="#" class="item-text">Login</a></li>
                 <li class="navbar-item">
                     <a href="#" class="btn bg-dark text-white font-weight-600">Sign up</a>
                 </li> -->
 
-                <li class="navbar-item">
-                    <a href="#" class="item-text favourite">
-                        <i class="fa-solid fa-heart"></i>
-                        Favourites
-                    </a>
-                </li>
-                <li class="navbar-item user-section">
-                    <div class="active-status"></div>
-                    <img src="./images/khangne.png" alt="User-Avatar" class="user-avatar">
-                    <p class="user-name">Enailis.N</p>
-                    <div class="card-information bg-white">
-                        <div class="user-profile">
-                            <img src="./images/khangne.png" alt="user-avatar" class="user-avatar">
-                            <div class="user-info">
-                                <p class="name text-dark-green font-weight-600">Enailis.N</p>
-                                <p class="status text-dark-green font-weight-400">Online</p>
-                            </div>
-                        </div>
-                        <div class="card-btns">
-                            <a href="#" class="item-btn text-dark-green font-weight-500">
-                                <div class="btn-name">
-                                    <i class="fa-solid fa-user"></i>
-                                    <span>My account</span>
-                                </div>
-                                <i class="fa-solid fa-greater-than"></i>
-                            </a>
-                            <a href="#" class="item-btn text-dark-green font-weight-500">
-                                <div class="btn-name">
-                                    <i class="fa-solid fa-gear"></i>
-                                    <span>Settings</span>
-                                </div>
-                                <i class="fa-solid fa-greater-than"></i>
-                            </a>
-                        </div>
-                        <div class="card-btns">
-                            <a href="#" class="item-btn text-dark-green font-weight-500">
-                                <div class="btn-name">
-                                    <i class="fa-solid fa-life-ring"></i>
-                                    <span>Support</span>
-                                </div>
-                                <i class="fa-solid fa-greater-than"></i>
-                            </a>
-                            <a href="#" class="item-btn text-dark-green font-weight-500">
-                                <div class="btn-name">
-                                    <i class="fa-solid fa-right-from-bracket"></i>
-                                    <span>Log out</span>
-                                </div>
-                                <i class="fa-solid fa-greater-than"></i>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="icon-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="menu-mobile">
-                <div class="content-wrapper bg-main">
-                    <div class="user-profile">
-                        <div class="user-status"></div>
-                        <img src="./images/khangne.png" alt="user-avatar" class="user-avatar">
-                        <div class="user-info">
-                            <p class="name text-dark-green font-weight-600">Enailis.N</p>
-                            <p class="status text-dark-green font-weight-400">Online</p>
-                        </div>
-                    </div>
-                    <div class="card-btns">
-                        <a href="#" class="item-btn text-dark-green font-weight-500">
-                            <div class="btn-name">
-                                <i class="fa-solid fa-user"></i>
-                                <span>My account</span>
-                            </div>
-                            <i class="fa-solid fa-greater-than"></i>
-                        </a>
-                        <a href="#" class="item-btn text-dark-green font-weight-500">
-                            <div class="btn-name">
-                                <i class="fa-solid fa-gear"></i>
-                                <span>Settings</span>
-                            </div>
-                            <i class="fa-solid fa-greater-than"></i>
-                        </a>
-                    </div>
-                    <div class="card-btns">
-                        <a href="#" class="item-btn text-dark-green font-weight-500">
-                            <div class="btn-name">
-                                <i class="fa-solid fa-life-ring"></i>
-                                <span>Support</span>
-                            </div>
-                            <i class="fa-solid fa-greater-than"></i>
-                        </a>
-                        <a href="#" class="item-btn text-dark-green font-weight-500">
-                            <div class="btn-name">
-                                <i class="fa-solid fa-right-from-bracket"></i>
-                                <span>Log out</span>
-                            </div>
-                            <i class="fa-solid fa-greater-than"></i>
-                        </a>
-                    </div>
+          <li class="navbar-item">
+            <a href="#" class="item-text favourite">
+              <i class="fa-solid fa-heart"></i>
+              Favourites
+            </a>
+          </li>
+          <li class="navbar-item user-section">
+            <div class="active-status"></div>
+            <img
+              src="./images/khangne.png"
+              alt="User-Avatar"
+              class="user-avatar"
+            />
+            <p class="user-name">Enailis.N</p>
+            <div class="card-information bg-white">
+              <div class="user-profile">
+                <img
+                  src="./images/khangne.png"
+                  alt="user-avatar"
+                  class="user-avatar"
+                />
+                <div class="user-info">
+                  <p class="name text-dark-green font-weight-600">Enailis.N</p>
+                  <p class="status text-dark-green font-weight-400">Online</p>
                 </div>
+              </div>
+              <div class="card-btns">
+                <a href="#" class="item-btn text-dark-green font-weight-500">
+                  <div class="btn-name">
+                    <i class="fa-solid fa-user"></i>
+                    <span>My account</span>
+                  </div>
+                  <i class="fa-solid fa-greater-than"></i>
+                </a>
+                <a href="#" class="item-btn text-dark-green font-weight-500">
+                  <div class="btn-name">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                  </div>
+                  <i class="fa-solid fa-greater-than"></i>
+                </a>
+              </div>
+              <div class="card-btns">
+                <a href="#" class="item-btn text-dark-green font-weight-500">
+                  <div class="btn-name">
+                    <i class="fa-solid fa-life-ring"></i>
+                    <span>Support</span>
+                  </div>
+                  <i class="fa-solid fa-greater-than"></i>
+                </a>
+                <a href="#" class="item-btn text-dark-green font-weight-500">
+                  <div class="btn-name">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Log out</span>
+                  </div>
+                  <i class="fa-solid fa-greater-than"></i>
+                </a>
+              </div>
             </div>
-        </header>
-        <!-- End Header -->
-
-        <!-- Main content -->
-        <div class="main-content bg-main">
+          </li>
+        </ul>
+        <div class="icon-menu">
+          <i class="fa-solid fa-bars"></i>
         </div>
-    
-        <footer class="bg-primary">
-            <div class="subsribe-seciton bg-light-green">
-                <div class="left-content">
-                    <h3 class="title font-weight-700 text-dark-green">Subscribe <br> Newsletter</h3>
-                    <p class="sub-title font-weight-700 text-dark-green">The Travel</p>
-                    <p class="content font-weight-500 text-dark-green">Get inspired! Receive travel discounts, tips and
-                        behind the scenes stories.</p>
-                    <div class="subcribe-form">
-                        <input type="text" placeholder="Your email address" class="input-box">
-                        <a href="#" class="btn bg-dark text-white font-weight-600">Subscribe</a>
-                    </div>
-                </div>
-                <div class="right-content">
-                    <img src="./images/footer-mailbox.png" alt="mailbox-img" class="subcribe-img">
-                </div>
+        <div class="menu-mobile">
+          <div class="content-wrapper bg-main">
+            <div class="user-profile">
+              <div class="user-status"></div>
+              <img
+                src="./images/khangne.png"
+                alt="user-avatar"
+                class="user-avatar"
+              />
+              <div class="user-info">
+                <p class="name text-dark-green font-weight-600">Enailis.N</p>
+                <p class="status text-dark-green font-weight-400">Online</p>
+              </div>
             </div>
+            <div class="card-btns">
+              <a href="#" class="item-btn text-dark-green font-weight-500">
+                <div class="btn-name">
+                  <i class="fa-solid fa-user"></i>
+                  <span>My account</span>
+                </div>
+                <i class="fa-solid fa-greater-than"></i>
+              </a>
+              <a href="#" class="item-btn text-dark-green font-weight-500">
+                <div class="btn-name">
+                  <i class="fa-solid fa-gear"></i>
+                  <span>Settings</span>
+                </div>
+                <i class="fa-solid fa-greater-than"></i>
+              </a>
+            </div>
+            <div class="card-btns">
+              <a href="#" class="item-btn text-dark-green font-weight-500">
+                <div class="btn-name">
+                  <i class="fa-solid fa-life-ring"></i>
+                  <span>Support</span>
+                </div>
+                <i class="fa-solid fa-greater-than"></i>
+              </a>
+              <a href="#" class="item-btn text-dark-green font-weight-500">
+                <div class="btn-name">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  <span>Log out</span>
+                </div>
+                <i class="fa-solid fa-greater-than"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
 
-            <div class="footer-content">
-                <div class="footer-images">
-                    <img src="./images/footer-logo.svg" alt="footer-logo" class="footer-logo">
-                    <div class="footer-icons">
-                        <a href="#" class="text-dark-green"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="text-dark-green"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="text-dark-green"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#" class="text-dark-green"><i class="fa-brands fa-square-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-link">
-                    <ul class="footer-list">
-                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
-                        <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
-                    </ul>
-                    <ul class="footer-list">
-                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
-                        <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
-                    </ul>
-                    <ul class="footer-list">
-                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
-                        <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
-                    </ul>
-                    <ul class="footer-list">
-                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
-                    </ul>
-                    <ul class="footer-list">
-                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
-                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
-                    </ul>
-                </div>
+      <!-- Main content -->
+      <div class="main-content bg-main">
+        <div class="profile-header">
+          <div class="avatar">
+            <img src="./images/khangne.png" alt="Avatar" />
+          </div>
+        </div>
+      </div>
+
+      <footer class="bg-primary">
+        <div class="subsribe-seciton bg-light-green">
+          <div class="left-content">
+            <h3 class="title font-weight-700 text-dark-green">
+              Subscribe <br />
+              Newsletter
+            </h3>
+            <p class="sub-title font-weight-700 text-dark-green">The Travel</p>
+            <p class="content font-weight-500 text-dark-green">
+              Get inspired! Receive travel discounts, tips and behind the scenes
+              stories.
+            </p>
+            <div class="subcribe-form">
+              <input
+                type="text"
+                placeholder="Your email address"
+                class="input-box"
+              />
+              <a href="#" class="btn bg-dark text-white font-weight-600"
+                >Subscribe</a
+              >
             </div>
-        </footer>
+          </div>
+          <div class="right-content">
+            <img
+              src="./images/footer-mailbox.png"
+              alt="mailbox-img"
+              class="subcribe-img"
+            />
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <div class="footer-images">
+            <img
+              src="./images/footer-logo.svg"
+              alt="footer-logo"
+              class="footer-logo"
+            />
+            <div class="footer-icons">
+              <a href="#" class="text-dark-green"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="text-dark-green"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="text-dark-green"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="#" class="text-dark-green"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-link">
+            <ul class="footer-list">
+              <li class="list-title text-dark-green font-weight-700">
+                Our Destinations
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Canada</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Alaksa</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">France</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Iceland</a>
+              </li>
+            </ul>
+            <ul class="footer-list">
+              <li class="list-title text-dark-green font-weight-700">
+                Our Destinations
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Canada</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Alaksa</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">France</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Iceland</a>
+              </li>
+            </ul>
+            <ul class="footer-list">
+              <li class="list-title text-dark-green font-weight-700">
+                Our Destinations
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Canada</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Alaksa</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">France</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Iceland</a>
+              </li>
+            </ul>
+            <ul class="footer-list">
+              <li class="list-title text-dark-green font-weight-700">
+                Our Destinations
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Canada</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Alaksa</a>
+              </li>
+            </ul>
+            <ul class="footer-list">
+              <li class="list-title text-dark-green font-weight-700">
+                Our Destinations
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Canada</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark-green font-weight-500">Alaksa</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
-    
-</body>
+  </body>
 </html>

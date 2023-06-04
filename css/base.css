@@ -1,114 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url(./header.css);
 @import url(./footer.css);
 
 :root {
-    --dark-green: #112211;
-    --black-color: #000000;
-    --primary-color: #8DD3BB;
-    --light-green: #CDEAE1;
-    --white-color: #ffffff;
-    --dark-color: #1C1B1F;
-    --light-color:#FAFBFC;
+  --dark-green: #112211;
+  --black-color: #000000;
+  --primary-color: #8dd3bb;
+  --light-green: #cdeae1;
+  --white-color: #ffffff;
+  --dark-color: #1c1b1f;
+  --light-color: #fafbfc;
 }
 
-  
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .text-white {
-    color: var(--white-color) !important;
+  color: var(--white-color) !important;
 }
 
 .text-dark-green {
-    color: var(--dark-green) !important;
+  color: var(--dark-green) !important;
 }
 
 .text-black {
-    color: var(--black-color) !important;
+  color: var(--black-color) !important;
 }
 
 .font-weight-700 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .font-weight-600 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .font-weight-500 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .font-weight-400 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .bg-primary {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .bg-dark {
-    background-color: var(--dark-green);
+  background-color: var(--dark-green);
 }
 
 .bg-white {
-    background-color: var(--white-color);
+  background-color: var(--white-color);
 }
 
 .bg-light-green {
-    background-color: var(--light-green);
+  background-color: var(--light-green);
 }
 
 .bg-main {
-    background-color: var(--light-color);
+  background-color: var(--light-color);
 }
 
 .btn {
-    padding: 16px 16px;
-    border-radius: 5px;
-    display: inline-block;
-    font-size: 14px;
-    text-align: center;
+  padding: 16px 16px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
 }
 
 .btn-icon {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    position: relative;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
 }
 
 .btn-icon > i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .btn-icon:hover,
 .btn:hover {
-    opacity: 0.6;
-    cursor: pointer;
+  opacity: 0.6;
+  cursor: pointer;
 }
 .main-wrapper {
-    display: grid;
-    height: 100vh;
-    grid-template-rows: auto 1fr auto;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
-
-
