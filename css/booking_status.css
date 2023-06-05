@@ -1,6 +1,5 @@
 .main-wrapper .main-content {
-    padding-top: calc(73px + 48px);
-    padding-bottom: 120px;
+    padding: 48px 104px 120px;
 }
 
 .main-wrapper .main-content .cover-bg {
@@ -10,7 +9,6 @@
 .main-wrapper .main-content .cover-bg .bg-img {
     height: 350px;
     width: 100%;
-    padding: 0 104px;
 }
 
 .main-wrapper .main-content .cover-bg .img-avt {
@@ -41,18 +39,211 @@
     font-size: 16px;
     line-height: 20px;
 }
+
 .main-wrapper .main-content .nav-account {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--white-color);
-    padding: 30px 24px;
-    margin: 32px 104px;
+    padding: 16px 0;
+    margin: 32px 0 40px 0;
     box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
     border-radius: 12px;
 }
+
 .main-wrapper .main-content .nav-account .item {
     width: calc(100% / 3);
     font-size: 16px;
     line-height: 20px;
+    padding: 14px 24px;
+    position: relative;
+}
+
+.main-wrapper .main-content .nav-account .item:nth-child(2) {
+    border-right: 1px solid #D7E2EE;
+    border-left: 1px solid #D7E2EE;
+}
+
+.main-wrapper .main-content .nav-account .item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(48px + 16px);
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.main-wrapper .main-content .nav-account .item:hover::after {
+    width: 100%;
+}
+
+.main-wrapper .main-content .nav-account .item.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(48px + 16px);
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.bookings-content .bookings-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.bookings-content .bookings-top .booking-title {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.booking-up {
+    display: flex;
+    gap: 8px;
+}
+
+.upcomming-text {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.icon-upcoming {
+    height: 5.0625px;
+    width: 10.125px;
+    color: var(--dark-green);
+}
+
+.booking-infor {
+    display: flex;
+}
+
+.booking-item {
+    background: var(--white-color);
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 16px;
+    padding: 32px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-hotel {
+    width: 80px;
+    height: 80px;
+    border: 0.5px solid #8DD3BB;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.img-hotel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.check-in-out {
+    display: flex;
+    gap: 16px;
+    padding: 0 24px;
+    border-right: 1px solid var(--primary-color);
+    align-items: center;
+}
+
+.check-title {
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.75;
+    margin-bottom: 8px;
+}
+
+.check-time {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.center-line {
+    width: 20px;
+    height: 0;
+    border: 1px solid var(--black-color);
+}
+.booking-item{
+    margin-bottom: 16px;
+}
+.time-content {
+    display: flex;
+    width: 320px;
+    padding: 0 24px;
+    gap: 8px;
+    
+    flex-wrap: wrap;
+}
+
+.time-content .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.icon-timer {
+    width: 32px;
+    height: 32px;
+    background-color: #EBF6F2;
+    position: relative;
+    border-radius: 4px;
+}
+
+.icon-timer i {
+    width: 16.5px;
+    height: 16.5px;
+    color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.time-content .item .time-title {
+    font-size: 12px;
+    line-height: 15px;
+    opacity: 0.6;
+}
+
+.time-content .item .time {
+    font-size: 16px;
+    line-height: 20px;
+}
+.status-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.status-content .status-book{
+    font-size: 14px;
+    line-height: 17px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    padding: 16px;
+}
+.status-content .btn-icon i{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.status-content .status-book.updating{
+    background-color: #d11212 !important;
+    color: var(--white-color) !important;
+}
+.status-content .status-book.payed{
+    background-color: #00D257;
+    color: var(--white-color) !important;
 }

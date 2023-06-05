@@ -34,11 +34,12 @@
                     </a>
                 </li>
                 <li class="navbar-item user-section">
-                    <img src="./images/khangne.png" alt="User-Avatar" class="user-avatar">
+                    <div class="active-status"></div>
+                    <img src="./images/khangdep.jpg" alt="User-Avatar" class="user-avatar">
                     <p class="user-name">Enailis.N</p>
                     <div class="card-information bg-white">
                         <div class="user-profile">
-                            <img src="./images/khangne.png" alt="user-avatar" class="user-avatar">
+                            <img src="./images/khangdep.jpg" alt="user-avatar" class="user-avatar">
                             <div class="user-info">
                                 <p class="name text-dark-green font-weight-600">Enailis.N</p>
                                 <p class="status text-dark-green font-weight-400">Online</p>
@@ -79,6 +80,53 @@
                     </div>
                 </li>
             </ul>
+            <div class="icon-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu-mobile">
+                <div class="content-wrapper bg-main">
+                    <div class="user-profile">
+                        <div class="user-status"></div>
+                        <img src="./images/khangne.png" alt="user-avatar" class="user-avatar">
+                        <div class="user-info">
+                            <p class="name text-dark-green font-weight-600">Enailis.N</p>
+                            <p class="status text-dark-green font-weight-400">Online</p>
+                        </div>
+                    </div>
+                    <div class="card-btns">
+                        <a href="#" class="item-btn text-dark-green font-weight-500">
+                            <div class="btn-name">
+                                <i class="fa-solid fa-user"></i>
+                                <span>My account</span>
+                            </div>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                        <a href="#" class="item-btn text-dark-green font-weight-500">
+                            <div class="btn-name">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Settings</span>
+                            </div>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                    </div>
+                    <div class="card-btns">
+                        <a href="#" class="item-btn text-dark-green font-weight-500">
+                            <div class="btn-name">
+                                <i class="fa-solid fa-life-ring"></i>
+                                <span>Support</span>
+                            </div>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                        <a href="#" class="item-btn text-dark-green font-weight-500">
+                            <div class="btn-name">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span>Log out</span>
+                            </div>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </header>
         <!-- End Header -->
 
@@ -96,15 +144,164 @@
                 <li class="item ">
                     <a class="text-dark-green font-weight-600" href="#">Account</a>
                 </li>
-                <li class="item "><a class="text-dark-green font-weight-600" href="#">Bookings Status</a></li>
+                <li class="item active"><a class="text-dark-green font-weight-600" href="#">Bookings Status</a></li>
                 <li class="item "><a class="text-dark-green font-weight-600" href="#">History</a></li>
             </ul>
+            <div class="bookings-content">
+                <div class="bookings-top">
+                    <div class="booking-title font-weight-700 text-black">Bookings</div>
+                    <div class="booking-up">
+                        <div class="upcomming-text text-black font-weight-600">Upcoming</div>
+                        <i class="fa-solid fa-angle-down icon-upcoming"></i>
+                    </div>
+                </div>
 
+                <div class="booking-list">
+                    <div class="booking-item">
+                        <div class="booking-infor">
+                            <div class="img-hotel">
+                                <img src="./images/hotel.png" alt="hotel-main-image">
+                            </div>
+                            <div class="check-in-out">
+                                <div class="check-in">
+                                    <div class="check-title font-weight-400 text-dark-green">Check in</div>
+                                    <div class="check-time font-weight-600 text-dark-green">Thur, Dec 8</div>
+                                </div>
+                                <div class="center-line"></div>
+                                <div class="check-out">
+                                    <div class="check-title font-weight-400 text-dark-green">Check out</div>
+                                    <div class="check-time font-weight-600 text-dark-green">Fri, Dec 9</div>
+                                </div>
+                            </div>
+                            <div class="time-content">
+                                <div class="item">
+                                    <div class="icon-timer"><i class="fa-solid fa-clock"></i></div>
+                                    <div class="text-time">
+                                        <div class="time-title font-weight-600 text-dark-green">Check-In time</div>
+                                        <div class="time font-weight-500 text-dark-green">12:00PM</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-timer"><i class="fa-solid fa-door-closed"></i></div>
+                                    <div class="text-time">
+                                        <div class="time-title font-weight-600 text-dark-green">State</div>
+                                        <div class="time font-weight-500 text-dark-green">Staying</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-timer"><i class="fa-solid fa-clock"></i></div>
+                                    <div class="text-time">
+                                        <div class="time-title font-weight-600 text-dark-green">Check-In out</div>
+                                        <div class="time font-weight-500 text-dark-green">11:30PM</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="status-content">
+                            <div class="status-book updating font-weight-500 text-dark-green">Updating</div>
+                            <a href="#" class="btn-icon"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+                    </div><div class="booking-item">
+                        <div class="booking-infor">
+                            <div class="img-hotel">
+                                <img src="./images/hotel.png" alt="hotel-main-image">
+                            </div>
+                            <div class="check-in-out">
+                                <div class="check-in">
+                                    <div class="check-title font-weight-400 text-dark-green">Check in</div>
+                                    <div class="check-time font-weight-600 text-dark-green">Thur, Dec 8</div>
+                                </div>
+                                <div class="center-line"></div>
+                                <div class="check-out">
+                                    <div class="check-title font-weight-400 text-dark-green">Check out</div>
+                                    <div class="check-time font-weight-600 text-dark-green">Fri, Dec 9</div>
+                                </div>
+                            </div>
+                            <div class="time-content">
+                                <div class="item">
+                                    <div class="icon-timer"><i class="fa-solid fa-clock"></i></div>
+                                    <div class="text-time">
+                                        <div class="time-title font-weight-600 text-dark-green">Check-In time</div>
+                                        <div class="time font-weight-500 text-dark-green">12:00PM</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-timer"><i class="fa-solid fa-door-closed"></i></div>
+                                    <div class="text-time">
+                                        <div class="time-title font-weight-600 text-dark-green">State</div>
+                                        <div class="time font-weight-500 text-dark-green">Staying</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-timer"><i class="fa-solid fa-clock"></i></div>
+                                    <div class="text-time">
+                                        <div class="time-title font-weight-600 text-dark-green">Check-In out</div>
+                                        <div class="time font-weight-500 text-dark-green">11:30PM</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="status-content">
+                            <div class="status-book font-weight-500 text-dark-green">Confirm</div>
+                            <a href="#" class="btn-icon"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+                    </div>
+                    <div class="booking-item">
+                        <div class="booking-infor">
+                            <div class="img-hotel">
+                                <img src="./images/hotel.png" alt="hotel-main-image">
+                            </div>
+                            <div class="check-in-out">
+                                <div class="check-in">
+                                    <div class="check-title font-weight-400 text-dark-green">Check in</div>
+                                    <div class="check-time font-weight-600 text-dark-green">Thur, Dec 8</div>
+                                </div>
+                                <div class="center-line"></div>
+                                <div class="check-out">
+                                    <div class="check-title font-weight-400 text-dark-green">Check out</div>
+                                    <div class="check-time font-weight-600 text-dark-green">Fri, Dec 9</div>
+                                </div>
+                            </div>
+                            <div class="time-content">
+                                <div class="item">
+                                    <div class="icon-timer"><i class="fa-solid fa-clock"></i></div>
+                                    <div class="text-time">
+                                        <div class="time-title font-weight-600 text-dark-green">Check-In time</div>
+                                        <div class="time font-weight-500 text-dark-green">12:00PM</div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="icon-timer"><i class="fa-solid fa-door-closed"></i></div>
+                                    <div class="text-time">
+                                        <div class="time-title font-weight-600 text-dark-green">State</div>
+                                        <div class="time font-weight-500 text-dark-green">On arrival</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon-timer"><i class="fa-solid fa-clock"></i></div>
+                                    <div class="text-time">
+                                        <div class="time-title font-weight-600 text-dark-green">Check-In out</div>
+                                        <div class="time font-weight-500 text-dark-green">11:30PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-content">
+                            <div class="status-book payed font-weight-500 text-dark-green">Payed</div>
+                            <a href="#" class="btn-icon"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
         <!-- Main End -->
 
         <!-- Footer content -->
-    
+
         <footer class="bg-primary">
             <div class="subsribe-seciton bg-light-green">
                 <div class="left-content">
@@ -132,37 +329,39 @@
                         <a href="#" class="text-dark-green"><i class="fa-brands fa-square-instagram"></i></a>
                     </div>
                 </div>
-                <ul class="footer-list">
-                    <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
-                    <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
-                </ul>
-                <ul class="footer-list">
-                    <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
-                    <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
-                </ul>
-                <ul class="footer-list">
-                    <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
-                    <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
-                </ul>
-                <ul class="footer-list">
-                    <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
-                </ul>
-                <ul class="footer-list">
-                    <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
-                    <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
-                </ul>
+                <div class="footer-link">
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </div>
