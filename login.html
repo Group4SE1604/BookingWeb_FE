@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <!-- Link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/login.css">
+    <!-- <link rel="stylesheet" href="./css/"> -->
+    <!-- Link owl carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- Link JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="left-wrapper">
+            <div class="logo">
+                <img src="./images/header_logo.svg" alt="logo-image" class="logo-img">
+            </div>
+            <h1 class="text-black font-weight-700">Login</h1>
+            <p class="text-dark-green font-weight-400">Login to access your Golobe account</p>
+            <form action="">
+                <div class="form-login">
+                    <input type="text" class="input-box" name="Username" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="form-login">
+                    <input type="password" class="input-box input-pass font-weight-400 text-dark" name="password" required>
+                    <label for="">Password</label>
+                    <div class="eye">
+                        <i class="eye-icon fa-solid fa-eye-slash"></i>
+                    </div>
+                </div>
+                <div class="extra">
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <span class="text-dark-green font-weight-500">Remember me</span>
+                          
+                    </div>
+                    <div class="forgot-pass">
+                        <a href="" class="text-slamon font-weight-500">Forgot Password</a>
+                    </div>
+                </div>
+                <input type="submit" value="Login" class="btn btn-login dark-green bg-primary">
+            </form>
+            <div class="register">
+                <span class="text-dark-green font-weight-500">Don’t have an account? <a href="#" class="register-link text-slamon">Sign up</a></span>
+            </div>
+            <div class="line"></div>
+            <div class="media-options">
+                <a href="#"class="field google">
+                    <img src="images/google.png" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+        <div class="right-wrapper">
+            <div class="owl-login owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./images/login_1.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/login_2.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/khangdep.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.6.1.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="js/login.js"></script>
+</html>
