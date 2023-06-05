@@ -107,6 +107,27 @@
   justify-content: space-between;
   align-items: center;
 }
+.profile-btn {
+  display: flex;
+  gap: 0.5rem;
+}
+.verify-btn {
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+  width: 90px;
+  color: #00D257;
+  height: 35px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem  ;
+
+
+}
+.verify-btn,.edit-btn {
+  padding: 1.25rem;
+}
 .account-title {
   margin-bottom: 0.35rem;
 }
