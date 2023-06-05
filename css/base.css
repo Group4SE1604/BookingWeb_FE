@@ -2,6 +2,8 @@
 @import url(./header.css);
 @import url(./footer.css);
 
+
+
 :root {
   --dark-green: #112211;
   --black-color: #000000;
@@ -107,4 +109,7 @@ html {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
+}
+.main-wrapper .main-content {
+  padding: 48px 104px 120px;
 }
