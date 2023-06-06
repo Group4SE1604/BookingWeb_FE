@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search page</title>
+    <!-- Link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- header -->
+        <header>
+            <div class="logo">
+                <img src="./images/header_logo.svg" alt="logo-image" class="logo-img">
+            </div>
+            <ul class="navbar">
+                <!-- <li class="navbar-item"><a href="#" class="item-text">Login</a></li>
+                <li class="navbar-item">
+                    <a href="#" class="btn bg-dark text-white font-weight-600">Sign up</a>
+                </li> -->
+
+                <li class="navbar-item">
+                    <a href="#" class="item-text favourite">
+                        <i class="fa-solid fa-heart"></i>
+                        Favourites
+                    </a>
+                </li>
+                <li class="navbar-item user-section">
+                    <div class="active-status"></div>
+                    <img src="./images/khangne.png" alt="User-Avatar" class="user-avatar">
+                    <p class="user-name">Enailis.N</p>
+                    <div class="card-information bg-white">
+                        <div class="user-profile">
+                            <img src="./images/khangne.png" alt="user-avatar" class="user-avatar">
+                            <div class="user-info">
+                                <p class="name text-dark-green font-weight-600">Enailis.N</p>
+                                <p class="status text-dark-green font-weight-400">Online</p>
+                            </div>
+                        </div>
+                        <div class="card-btns">
+                            <a href="#" class="item-btn text-dark-green font-weight-500">
+                                <div class="btn-name">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>My account</span>
+                                </div>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </a>
+                            <a href="#" class="item-btn text-dark-green font-weight-500">
+                                <div class="btn-name">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span>Settings</span>
+                                </div>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </a>
+                        </div>
+                        <div class="card-btns">
+                            <a href="#" class="item-btn text-dark-green font-weight-500">
+                                <div class="btn-name">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                    <span>Support</span>
+                                </div>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </a>
+                            <a href="#" class="item-btn text-dark-green font-weight-500">
+                                <div class="btn-name">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    <span>Log out</span>
+                                </div>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="icon-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu-mobile">
+                <div class="content-wrapper bg-main">
+                    <div class="user-profile">
+                        <div class="user-status"></div>
+                        <img src="./images/khangne.png" alt="user-avatar" class="user-avatar">
+                        <div class="user-info">
+                            <p class="name text-dark-green font-weight-600">Enailis.N</p>
+                            <p class="status text-dark-green font-weight-400">Online</p>
+                        </div>
+                    </div>
+                    <div class="card-btns">
+                        <a href="#" class="item-btn text-dark-green font-weight-500">
+                            <div class="btn-name">
+                                <i class="fa-solid fa-user"></i>
+                                <span>My account</span>
+                            </div>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                        <a href="#" class="item-btn text-dark-green font-weight-500">
+                            <div class="btn-name">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Settings</span>
+                            </div>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                    </div>
+                    <div class="card-btns">
+                        <a href="#" class="item-btn text-dark-green font-weight-500">
+                            <div class="btn-name">
+                                <i class="fa-solid fa-life-ring"></i>
+                                <span>Support</span>
+                            </div>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                        <a href="#" class="item-btn text-dark-green font-weight-500">
+                            <div class="btn-name">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span>Log out</span>
+                            </div>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Main content -->
+        <div class="main-content bg-main">
+            <div class="search-bar bg-white">
+                <div class="input-field">
+                    <input type="text" class="input-box font-weight-400 text-dark" placeholder="Destination">
+                    <label for=" " class="input-label font-weight-400 text-dark">Enter Destination</label>
+                    <i class="fa-solid fa-cart-flatbed input-icon"></i>
+                </div>
+                <div class="input-field">
+                    <input type="date" class="input-box font-weight-400 text-dark">
+                    <label for=" " class="input-label font-weight-400 text-dark">Check in</label>
+                </div>
+                <div class="input-field">
+                    <input type="date" class="input-box font-weight-400 text-dark">
+                    <label for=" " class="input-label font-weight-400 text-dark">Check out</label>
+                </div>
+                <div class="input-field">
+                    <!-- <input type="text" class="input-box font-weight-400 text-dark"> -->
+                    <select name="rooms" id="id" class="input-box">
+                        <option value="1" class="text-dark font-weight-400">1 room, 2 guests</option>
+                        <option value="1" class="text-dark font-weight-400">1 room, 2 guests</option>
+                        <option value="1" class="text-dark font-weight-400">1 room, 2 guests</option>
+                    </select>
+                    <label for=" " class="input-label font-weight-400 text-dark">Rooms & Guests</label>
+                    <i class="fa-solid fa-user input-icon"></i>
+                </div>
+                <div class="search-btn">
+                    <a href="#" class="btn-icon bg-primary">
+                        <i class="fa-solid fa-magnifying-glass text-dark font-weight-700"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="search-wrapper">
+                <div class="filter-section">
+                    <h4 class="filter-title text-dark-green font-weight-600">Filters</h4>
+                    <div class="price-filter">
+                        <div class="heading">
+                            <p class="title text-dark-green font-weight-600">Price</p>
+                            <div class="open-icon"><i class="fa-solid fa-chevron-up"></i></div>
+                        </div>
+                        <div class="price-form">
+                            <div class="slider">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="range-input">
+                                <input type="range" class="range-min" min="0" max="1000" value="0" step="5">
+                                <input type="range" class="range-max" min="0" max="1000" value="1000" step="5">
+                            </div>
+                            <div class="price-input">
+                                <div class="field">
+                                    <span class="font-weight-500 text-dark-green">$</span>
+                                    <input type="number" class="input-min font-weight-500 text-dark-green" value="0">
+                                </div>
+                                <div class="field">
+                                    <span class="font-weight-500 text-dark-green">$</span>
+                                    <input type="number" class="input-max font-weight-500 text-dark-green" value="1000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-filter">
+                        <div class="heading">
+                            <p class="title text-dark-green font-weight-600">Rating</p>
+                            <div class="open-icon"><i class="fa-solid fa-chevron-up"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-section">
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="bg-primary">
+            <div class="subsribe-seciton bg-light-green">
+                <div class="left-content">
+                    <h3 class="title font-weight-700 text-dark-green">Subscribe <br> Newsletter</h3>
+                    <p class="sub-title font-weight-700 text-dark-green">The Travel</p>
+                    <p class="content font-weight-500 text-dark-green">Get inspired! Receive travel discounts, tips and
+                        behind the scenes stories.</p>
+                    <div class="subcribe-form">
+                        <input type="text" placeholder="Your email address" class="input-box">
+                        <a href="#" class="btn bg-dark text-white font-weight-600">Subscribe</a>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <img src="./images/footer-mailbox.png" alt="mailbox-img" class="subcribe-img">
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-images">
+                    <img src="./images/footer-logo.svg" alt="footer-logo" class="footer-logo">
+                    <div class="footer-icons">
+                        <a href="#" class="text-dark-green"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-dark-green"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-dark-green"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="text-dark-green"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-link">
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/search.js"></script>
+</body>
+
+</html>

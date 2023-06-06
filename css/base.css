@@ -36,6 +36,10 @@ html {
     color: var(--dark-green) !important;
 }
 
+.text-dark {
+    color: var(--dark-color) !important;
+}
+
 .text-black {
     color: var(--black-color) !important;
 }
@@ -98,6 +102,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 18px;
 }
 
 .btn-icon:hover,

@@ -1,0 +1,192 @@
+.main-content {
+    padding: 48px 104px 120px;
+}
+
+.main-content input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-content .search-bar {
+    padding: 32px 24px;
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.main-content .search-bar .input-field {
+    position: relative;
+    width: 40%;
+}
+
+.search-bar .input-field .input-box {
+    padding: 8px 16px 8px 48px;
+    font-size: 16px;
+    height: 56px;
+    border: 2px solid #79747E;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+}
+
+.search-bar .input-field .input-icon {
+    font-size: 16px;
+    color: var(--black-color);
+    position: absolute;
+    top: 0;
+    left: 24px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-bar .input-field .input-label {
+    font-size: 16px;
+    position: absolute;
+    transform: translateY(-50%);
+    user-select: none;
+    pointer-events: none;
+    top: 0;
+    left: 16px;
+    background-color: var(--white-color);
+}
+
+.search-bar .input-field .input-box:focus {
+    border-color: var(--primary-color);
+}
+
+.main-content .search-bar .input-field input[type="date"] {
+    padding-left: 16px;
+    padding-right: 8px;
+}
+
+.main-content .search-bar .input-field input[type="date"]::-webkit-calendar-picker-indicator {
+    font-size: 18px;
+}
+
+.main-content .search-bar .input-field:not(:first-child) {
+    width: 20%;
+}
+
+/* .main-content .search-bar .input-field select {
+    -webkit-appearance: none;
+} */
+
+.main-content .search-bar .search-btn .btn-icon {
+    width: 56px;
+    height: 56px;
+}
+
+.main-content .search-wrapper {
+    display: flex;
+    margin-top: 32px;
+}
+
+.search-wrapper .filter-section {width: 30%;}
+
+.search-wrapper .result-section {width: 60%;}
+
+.search-wrapper .filter-section .filter-title {
+    font-size: 20px;
+}
+
+.search-wrapper .filter-section .price-filter {
+    padding: 32px 0;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+
+
+.search-wrapper .heading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 27px;
+}
+
+.search-wrapper .heading .open-icon i {
+    font-size: 18px;
+}
+
+.search-wrapper .price-filter .slider {
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.search-wrapper .price-filter .slider .progress {
+    height: 100%;
+    left: 0%;
+    right: 0;
+    position: absolute;
+    border-radius: 5px;
+    background: var(--primary-color);
+}
+
+.search-wrapper .price-filter .range-input {
+    position: relative;
+}
+
+.search-wrapper .price-filter .range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.search-wrapper .price-filter input[type="range"]::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.search-wrapper .price-filter input[type="range"]::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary-color);
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.search-wrapper .price-filter .price-input {
+    width: 100%;
+    display: flex;
+    margin-top: 19px;
+    justify-content: space-between;
+}
+
+.search-wrapper .price-filter .price-input .field {
+    display: flex;
+    align-items: center;
+    width: 12%;
+}
+
+.price-filter .price-input .field input {
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    border: none;
+    -moz-appearance: none;
+    pointer-events: none;
+}
+
+.price-filter .price-input .field span {
+    font-size: 14px;
+}
+
+.price-filter input[type="number"]::-webkit-outer-spin-button,
+.price-filter input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
