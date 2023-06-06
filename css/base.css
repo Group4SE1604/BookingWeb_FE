@@ -95,6 +95,7 @@ html {
   border-radius: 5px;
 }
 
+.btn-icon > span,
 .btn-icon > i {
     position: absolute;
     top: 50%;
