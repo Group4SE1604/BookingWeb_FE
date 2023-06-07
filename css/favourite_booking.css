@@ -1,10 +1,11 @@
 .booking-card {
   width: 100%;
-  height: 16rem;
+  height: 18rem;
   background: #ffffff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 12px;
   display: flex;
+  margin-bottom: 1.5rem;
 }
 .title {
   margin-bottom: 1rem;
@@ -17,6 +18,7 @@
   flex-basis: 70%;
   display: flex;
   flex-direction: column;
+  padding: 1.5rem;
 }
 .hotel-img img {
   border-radius: 12px 0px 0px 12px;
@@ -24,18 +26,16 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 .detail-wrapper {
-  margin: 1.5rem;
-  flex-basis:80% ;
+  flex-basis: 80%;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid grey;
+  border-bottom: 0.2px solid rgb(218, 214, 214);
 }
-.button-wrapper {
-  flex-basis: 20% ;
+.detail-content {
+  line-height: 2.2;
 }
 .price {
   color: #ff8682;
@@ -51,4 +51,74 @@
 }
 .star-icon {
   color: #ff8682;
+}
+.heart-button {
+  height: 100%;
+  padding: 0.85rem;
+  border: 1.8px solid #8dd3bb;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.hotel-score {
+  border: solid 1.8px #8dd3bb;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+.button-wrapper {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.view-place-button {
+  width: 100%;
+  height: 100%;
+  background: #8dd3bb;
+  border: none;
+  border-radius: 5px;
+  font-weight: 550;
+  padding: 0.85rem;
+  cursor: pointer;
+  
+  transition: all 0.2s ease-in-out;
+}
+.view-place-button:hover {
+  background: #67c9a6;
+}
+@media screen and (max-width: 1100px) {
+  .booking-card {
+    height: 16rem;
+  }
+  .price {
+    font-size: 1.5rem
+  }
+  .price span {
+    margin-left: -5px;
+  }
+  .hotel-name {
+    font-size : 1.25rem;
+  } 
+  .hotel-location {
+    font-size: 0.8rem;
+  }
+
+
+}
+@media screen and (max-width: 1000px) {
+  .price {
+    font-size: 1.2rem
+  }
+  .price span {
+    margin-left: -3px;
+  }
+  .hotel-name {
+    font-size : 1rem;
+  } 
+  .hotel-location {
+    font-size: 0.7rem;
+  }
+ 
+  
+
 }
