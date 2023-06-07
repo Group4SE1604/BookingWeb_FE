@@ -78,7 +78,6 @@
   font-weight: 550;
   padding: 0.85rem;
   cursor: pointer;
-
   transition: all 0.2s ease-in-out;
 }
 .view-place-button:hover {

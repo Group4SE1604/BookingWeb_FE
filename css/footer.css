@@ -111,6 +111,7 @@ footer .footer-content .footer-list li a:hover {
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
   footer {
     padding: 160px 72px 32px;
+    margin-top: 6rem;
   }
 
   footer .subsribe-seciton {
@@ -179,6 +180,11 @@ footer .footer-content .footer-list li a:hover {
     width: 60%;
     align-self: center;
     margin-bottom: 20px;
+    text-align: center;
+  }
+
+  footer .subsribe-seciton .subcribe-img {
+      width: 60%;
   }
 
   footer .subsribe-seciton .left-content .title {
@@ -198,10 +204,12 @@ footer .footer-content .footer-list li a:hover {
     font-size: 12px;
     margin-bottom: 8px;
   }
+
   footer .subsribe-seciton .subcribe-form {
     flex-direction: column;
     gap: 8px;
   }
+
   footer .subsribe-seciton .subcribe-form .input-box {
     padding: 12px 8px;
     font-size: 12px;
