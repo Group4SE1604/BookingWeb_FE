@@ -9,7 +9,7 @@ rangeInput.forEach(input =>{
         maxVal = parseInt(rangeInput[1].value);
         if((maxVal - minVal) < priceGap){
             if(e.target.className === "range-min"){
-                rangeInput[0].value = maxVal - priceGap
+                rangeInput[0].value = maxVal - priceGap;
             }else{
                 rangeInput[1].value = minVal + priceGap;
             }
@@ -20,4 +20,27 @@ rangeInput.forEach(input =>{
             range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
         }
     });
+});
+
+const showBtns = document.querySelectorAll('.search-wrapper .filter-section .open-icon');
+
+showBtns[0].addEventListener('click', function() {
+    let icon = showBtns[0].querySelector('i');
+    icon.classList.toggle('fa-rotate-180');
+    let priceFilter = document.querySelector('.search-wrapper .price-filter .price-form');
+    priceFilter.classList.toggle('close');
+});
+
+showBtns[1].addEventListener('click', function() {
+    let icon = showBtns[1].querySelector('i');
+    icon.classList.toggle('fa-rotate-180');
+    let priceFilter = document.querySelector('.search-wrapper .rating-filter .rate-butons');
+    priceFilter.classList.toggle('close');
+});
+
+showBtns[2].addEventListener('click', function() {
+    let icon = showBtns[2].querySelector('i');
+    icon.classList.toggle('fa-rotate-180');
+    let priceFilter = document.querySelector('.search-wrapper .freebies-filter .freebies-list');
+    priceFilter.classList.toggle('close');
 });
