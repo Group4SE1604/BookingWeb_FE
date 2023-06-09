@@ -1,3 +1,6 @@
+.text-primary{
+    color: var(--primary-color);
+}
 .main-wrapper .main-content {
     padding: 48px 104px 120px;
 }
@@ -228,22 +231,32 @@
     justify-content: center;
     gap: 16px;
 }
-.status-content .status-book{
-    font-size: 14px;
-    line-height: 17px;
-    background-color: var(--primary-color);
+.status-content .status-block{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 16px;
+    border: 2px solid var(--primary-color);
     border-radius: 4px;
     padding: 16px;
+    color: #fdca40;
 }
-.status-content .btn-icon i{
-    color: var(--primary-color);
-    text-decoration: none;
+.status-content .status-block i{
+    color: #fdca40;
 }
-.status-content .status-book.updating{
-    background-color: #d11212 !important;
-    color: var(--white-color) !important;
+.status-content .status-block.payed i{
+    color: #00d257;
+    font-size: 18px;
 }
-.status-content .status-book.payed{
-    background-color: #00D257;
-    color: var(--white-color) !important;
+.status-content .status-block.payed {
+    color: #00d257;
 }
+
+.status-content .status-block.confirmed i{
+    color: #111d4a;
+    font-size: 18px;
+}
+.status-content .status-block.confirmed {
+    color: #111d4a;
+}
+
