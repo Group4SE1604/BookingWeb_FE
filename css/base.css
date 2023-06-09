@@ -84,11 +84,13 @@ html {
 }
 
 .btn {
+    font-family: "Montserrat", sans-serif;
     padding: 16px 16px;
     border-radius: 5px;
     display: inline-block;
     font-size: 14px;
     text-align: center;
+    border: none;
 }
 
 .btn-icon {

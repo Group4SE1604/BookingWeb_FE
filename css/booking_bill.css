@@ -17,6 +17,7 @@
 .booking_details .left-content {
     width: 60%;
     padding: 32px 24px;
+    height: fit-content;
 }
 
 .booking_details .left-content .room-details {
@@ -40,7 +41,7 @@
 .booking_details .left-content .hotel-details {
     padding: 20px 32px;
     margin-top: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     border: 0.5px solid var(--primary-color);
     border-radius: 8px;
     display: flex;
@@ -121,7 +122,8 @@
 
 .booking_details .right-content .hotel-details .hotel-img img {
     width: 100%;
-    max-height: 121px;object-fit: cover;
+    max-height: 121px;
+    object-fit: cover;
 }
 
 .booking_details .right-content .hotel-details .hotel-infor {
@@ -158,4 +160,70 @@
 
 .booking_details .right-content .hotel-details .hotel-rating .rating-info {
     font-size: 13px;
+}
+
+.booking_details .right-content .infor-protect {
+    font-size: 16px;
+}
+
+.booking_details .right-content .booking-bill .title {
+    font-size: 16px;
+}
+
+.booking_details .right-content .booking-bill .form-row {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking_details .right-content .booking-bill .form-row:not(:last-child) {
+    margin-top: 16px;
+}
+
+.booking_details .right-content .booking-bill .form-row .input-box {
+    border: none;
+    font-size: 16px;
+    width: 50px;
+    font-family: "Montserrat", sans-serif;
+    pointer-events: none;
+    text-align: right;
+}
+
+.booking_details .right-content .booking-bill .btn {
+    width: 100%;
+}
+
+.booking_details .left-content .amount-btn {
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 24px;
+    display: inline-flex;
+}
+
+.booking_details .left-content .amount-btn .minus,
+.booking_details .left-content .amount-btn .plus{ 
+    padding: 4px 18px;
+    font-size: 32px;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+}
+
+.booking_details .left-content .amount-btn .minus:hover,
+.booking_details .left-content .amount-btn .plus:hover {
+    background-color: var(--primary-color);
+}
+
+.booking_details .left-content .amount-btn .number {
+    padding: 4px 18px;
+    font-size: 22px;
+    width: 80px;
+    text-align: center;
+    user-select: none;    
+    border: 1px solid var(--primary-color);
+    border-bottom: none;
+    border-top: none;
+    opacity: 0.6;
 }
