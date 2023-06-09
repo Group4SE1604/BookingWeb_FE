@@ -150,6 +150,11 @@
                             </p>
                         </div>
                     </div>
+                    <div class="amount-btn">
+                        <span class="font-weight-500 text-dark-green minus">-</span>
+                        <span class="font-weight-700 text-dark-green number">1</span>
+                        <span class="font-weight-500 text-dark-green plus">+</span>
+                    </div>
                     <div class="date-info">
                         <div class="date">
                             <p class="text text-dark-green font-weight-600">Thursday, Dec 8</p>
@@ -179,8 +184,51 @@
                         </div>
                     </div>
                     <div class="line"></div>
-                    <p class="infor-protect">Your booking is protected by <span>golobe</span></p>
+                    <p class="infor-protect font-weight-500 text-dark-green">Your booking is protected by <span class="font-weight-700 text-dark-green">golobe</span></p>
                     <div class="line"></div>
+                    <div class="booking-bill">
+                        <h4 class="title font-weight-700 text-dark-green">Price Details</h4>
+                        <form action="" method="post">
+                            <div class="form-row">
+                                <p class="content font-weight-500 text-dark-green">Base Fare</p>
+                                <div class="font-weight-500 text-dark-green">
+                                    <span class="font-weight-700 text-dark-green">$</span>
+                                    <input type="number" name="cost" class="input-box font-weight-700 text-dark-green" id="cost" value="100">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <p class="content font-weight-500 text-dark-green">Amount</p>
+                                <div class="font-weight-500 text-dark-green">
+                                    <span class="font-weight-700 text-dark-green"></span>
+                                    <input type="number" name="cost" class="input-box font-weight-700 text-dark-green" id="amount" value="1">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <p class="content font-weight-500 text-dark-green">Discount</p>
+                                <div class="font-weight-500 text-dark-green">
+                                    <span class="font-weight-700 text-dark-green">$</span>
+                                    <input type="number" name="cost" class="input-box font-weight-700 text-dark-green" id="discount" value="15">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <p class="content font-weight-500 text-dark-green">Service Fee</p>
+                                <div class="font-weight-500 text-dark-green">
+                                    <span class="font-weight-700 text-dark-green">$</span>
+                                    <input type="number" name="cost" class="input-box font-weight-700 text-dark-green" id="service" value="100">
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="form-row">
+                                <p class="content font-weight-500 text-dark-green">Total</p>
+                                <div class="font-weight-500 text-dark-green">
+                                    <span class="font-weight-700 text-dark-green">$</span>
+                                    <input type="number" name="cost" class="input-box font-weight-700 text-dark-green" id="total" value="100">
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <button class="btn bg-primary font-weight-600 text-dark-green" type="submit">Book</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -250,6 +298,7 @@
     </div>
 
     <script src="./js/main.js"></script>
+    <script src="./js/booking_bill.js"></script>
 </body>
 
 </html>
