@@ -239,10 +239,16 @@
     border: 2px solid var(--primary-color);
     border-radius: 4px;
     padding: 16px;
-    color: #fdca40;
+    color: #f2bb05;
+}
+.status-content .btn-icon i{
+    color: #d62828;
+}
+.status-content .btn-icon {
+    border:2px solid #d62828;
 }
 .status-content .status-block i{
-    color: #fdca40;
+    color: #f2bb05;
 }
 .status-content .status-block.payed i{
     color: #00d257;
