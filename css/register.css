@@ -122,18 +122,19 @@ html {
 }
 
 .left-wrapper {
-    width: 35%;
+    width: 45%;
+    border-radius: 30px;
+    overflow: hidden;
+    max-height: 656px;
 }
 
 .right-wrapper {
-    width: 40%;
+    width: 35%;
 }
 
 .owl-register .item img {
     width: 100%;
-    height: 617px;
-    object-fit: cover;
-    border-radius: 30px;
+    height: 100vh;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
@@ -143,7 +144,7 @@ html {
 
 .owl-theme .owl-nav.disabled+.owl-dots {
     position: absolute;
-    bottom: 24px;
+    bottom: 145px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -176,6 +177,7 @@ html {
 .right-wrapper .form-register {
     margin-bottom: 20px;
     position: relative;
+    width: 100%;
 }
 
 .right-wrapper .form-register .input-box {
@@ -224,6 +226,9 @@ html {
     border: 1px solid #79747E;
     margin-top: 35px;
     margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border: none;
 }
 
 .right-wrapper .login {
@@ -330,6 +335,8 @@ a.google:hover {
     .right-wrapper .btn-register {
         margin-top: 22px;
         margin-bottom: 15px;
+        border: none;
+
     }
 
     .right-wrapper .login {
@@ -350,266 +357,41 @@ a.google:hover {
 }
 
 @media only screen and (max-width: 900px) {
-    .right-wrapper h1 {
-        font-size: 30px;
-        line-height: 16px;
-        margin-top: 28px;
-        margin-bottom: 13px;
+    .main-wrapper {
+        padding: 50px;
+        gap: 95px;
+        justify-content: normal;
     }
 
-    .right-wrapper p {
-        font-size: 12px;
-        line-height: 18px;
-        margin-bottom: 18px;
+    .left-wrapper{
+        width: 38%;
     }
 
-    .right-wrapper .form-register {
-        margin-bottom: 17px;
+    .right-wrapper{
+        width: 50%;
     }
 
-    .right-wrapper .decline-row {
-        display: flex;
-        gap: 14px;
-        width: 100%;
-    }
 
-    .right-wrapper .form-register .input-box {
-        padding: 12px 0px 12px 1px;
-        font-size: 16px;
-    }
-
-    .right-wrapper .form-register label {
-        font-size: 11px;
-        left: 10px;
-    }
-
-    .right-wrapper .input-box:focus+label,
-    .right-wrapper .input-box:valid+label {
-        font-size: 9px;
-        line-height: 10px;
-    }
-
-    .right-wrapper .extra span {
-        font-size: 10px;
-        line-height: 10px;
-    }
-
-    .right-wrapper .btn-register {
-        width: 100%;
-        border: 1px solid #79747E;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .btn {
-        padding: 10px 16px;
-        font-size: 12px;
-    }
-
-    .right-wrapper .login {
-        font-size: 13px;
-        margin-bottom: 35px;
-    }
-
-    .line::before {
-        font-size: 10px;
-        padding: 0 8px;
-    }
-
-    .line {
-        margin: 30px 0;
-    }
-
-    .media-options a {
-        padding: 10px 8px;
-        margin-bottom: 6px;
-    }
-
-    a.google span {
-        font-size: 12px;
-    }
-
-    .owl-register .item img {
-        height: 556px;
-    }
 }
 
 @media only screen and (max-width: 739px) {
     .main-wrapper {
-        padding: 25px;
-        gap: 46px;
+        gap: 0;
+        padding: 0 110px;
     }
 
-    .right-wrapper .logo {
-        width: 65.35px;
-        height: 27px;
+    .left-wrapper{
+       width: 0;
     }
 
-    .right-wrapper h1 {
-        font-size: 21px;
-        line-height: 14px;
-        margin-top: 26px;
-        margin-bottom: 11px;
-    }
-
-    .right-wrapper p {
-        font-size: 12px;
-        line-height: 15px;
-        margin-bottom: 12px;
-    }
-
-    .right-wrapper .decline-row {
-        gap: 10px;
-    }
-
-    .right-wrapper .form-register {
-        margin-bottom: 12px;
-    }
-
-    .right-wrapper .form-register label {
-        font-size: 10px;
-        left: 5px;
-    }
-
-    .right-wrapper .form-register .input-box {
-        padding: 12px 0px 12px 6px;
-        font-size: 12px;
-    }
-
-    .right-wrapper .btn-register {
-        margin-top: 12px;
-        margin-bottom: 12px;
-    }
-
-    .right-wrapper .login {
-        font-size: 11px;
-        margin-bottom: 28px;
-    }
-
-    .line {
-        margin: 20px 0;
-    }
-
-    .line::before {
-        font-size: 9px;
-        padding: 0 8px;
-    }
-
-    img.google-img {
-        height: 17px;
-        width: 17px;
-    }
-    img.google-img {
-        left: 12px;
-    }
-
-    .owl-register .item img {
-        height: 473px;
-    }
-
-    .owl-theme .owl-nav.disabled+.owl-dots {
-        bottom: 8px;
-    }
-
-    .owl-theme .owl-dots .owl-dot span {
-        width: 5px;
-        height: 4px;
-        margin: 5px 6px;
+    .right-wrapper{
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .main-wrapper {
-        padding: 0px;
-        gap: 20px;
-    }
-
-    .right-wrapper h1 {
-        font-size: 19px;
-        line-height: 13px;
-        margin-top: 25px;
-        margin-bottom: 10px;
-    }
-
-    .right-wrapper p {
-        font-size: 10px;
-        line-height: 12px;
-        margin-bottom: 11px;
-    }
-
-    .right-wrapper .form-register .input-box {
-        padding: 10px 0px 10px 3px;
-        font-size: 10px;
-    }
-    
-    .right-wrapper .input-box:focus+label,
-    .right-wrapper .input-box:valid+label {
-        font-size: 7px;
-        line-height: 10px;
-    }
-
-    register label {
-        font-size: 7px;
-        left: 3px;
-    }
-
-    .right-wrapper .decline-row {
-        gap: 6px;
-    }
-
-    .right-wrapper .form-register {
-        margin-bottom: 8px;
-    }
-
-    .eye {
-        right: 6px;
-    }
-
-    .right-wrapper .extra span {
-        font-size: 9px;
-        line-height: 2px;
-    }
-
-    .right-wrapper .btn-register {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .right-wrapper .login {
-        font-size: 10px;
-        margin-bottom: 24px;
-    }
-
-    .line::before {
-        font-size: 6px;
-        padding: 0px 6px;
-    }
-
-    img.google-img {
-        left: 6px;
-    }
-
-    img.google-img {
-        height: 13px;
-        width: 13px;
-    }
-    
-    a.google span {
-        font-size: 10px;
-        margin-left: 15px;
-    }
-
-    .owl-register .item img {
-        height: 359px;
-    }
-
-    .owl-theme .owl-nav.disabled+.owl-dots {
-        bottom: 4px;
-    }
-
-    .owl-theme .owl-dots .owl-dot span {
-        width: 3px !important;
-        height: 2px !important;
-        margin: 3px 2px !important;
+        gap: 0;
+        padding: 0px 32px;
     }
 }
