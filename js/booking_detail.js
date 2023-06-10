@@ -1,7 +1,7 @@
-$('.owl-comment').owlCarousel({
-    loop: true,
-    dots: true,
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
     items: 1,
-    center: true,
-    margin: 0
-});
+    autoplay: true,
+    loop:true
+    });
+  });

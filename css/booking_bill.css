@@ -1,0 +1,229 @@
+.main-content .booking_details {
+    display: flex;
+    gap: 40px;
+}
+
+.booking_details .right-content,
+.booking_details .left-content {
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 12px;
+}
+
+.booking_details .right-content {
+    padding: 24px;
+    width: 40%;
+}
+
+.booking_details .left-content {
+    width: 60%;
+    padding: 32px 24px;
+    height: fit-content;
+}
+
+.booking_details .left-content .room-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking_details .left-content .room-name {
+    font-size: 24px;
+}
+
+.booking_details .left-content .room-price {
+    font-size: 14px;
+}
+
+.booking_details .left-content .room-price span {
+    font-size: 28px;
+}
+
+.booking_details .left-content .hotel-details {
+    padding: 20px 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: 0.5px solid var(--primary-color);
+    border-radius: 8px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.booking_details .left-content .hotel-details .hotel-img {
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.booking_details .left-content .hotel-details .hotel-img img {
+    width: 63px;
+    height: 63px;
+    object-fit: cover;
+}
+
+.booking_details .left-content .hotel-infor .hotel-name {
+    font-size: 24px;
+}
+
+.booking_details .left-content .hotel-infor .city {
+    font-size: 14px;
+    opacity: 0.75;
+    margin-top: 8px;
+}
+
+.booking_details .left-content .hotel-infor .city i {
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.booking_details .left-content .date-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking_details .left-content .date-info .text {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.booking_details .left-content .date-info .sub-text {
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.booking_details .left-content .date-info .icon {
+    height: 48px;
+    width: 168px;
+}
+
+.booking_details .left-content .date-info .icon img {
+    width: 100%;
+}
+
+.booking_details .right-content .line {
+    background: var(--dark-green);
+    opacity: 0.25;
+    height: 1px;
+    margin: 16px 0;
+}
+
+.booking_details .right-content .hotel-details {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.booking_details .right-content .hotel-details .hotel-img {
+    border-radius: 12px;
+    overflow: hidden;
+    width: 30%;
+}
+
+.booking_details .right-content .hotel-details .hotel-img img {
+    width: 100%;
+    max-height: 121px;
+    object-fit: cover;
+}
+
+.booking_details .right-content .hotel-details .hotel-infor {
+    width: 70%;
+}
+
+.booking_details .right-content .hotel-details .hotel-name {
+    font-size: 16px;
+    opacity: 0.75;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.booking_details .right-content .hotel-details .room-name {
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.booking_details .right-content .hotel-details .hotel-rating {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.booking_details .right-content .hotel-details .hotel-rating .btn-icon {
+    width: 40px;
+    height: 32px;
+}
+
+.booking_details .right-content .hotel-details .hotel-rating .rating-info {
+    font-size: 13px;
+}
+
+.booking_details .right-content .infor-protect {
+    font-size: 16px;
+}
+
+.booking_details .right-content .booking-bill .title {
+    font-size: 16px;
+}
+
+.booking_details .right-content .booking-bill .form-row {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking_details .right-content .booking-bill .form-row:not(:last-child) {
+    margin-top: 16px;
+}
+
+.booking_details .right-content .booking-bill .form-row .input-box {
+    border: none;
+    font-size: 16px;
+    width: 50px;
+    font-family: "Montserrat", sans-serif;
+    pointer-events: none;
+    text-align: right;
+}
+
+.booking_details .right-content .booking-bill .btn {
+    width: 100%;
+}
+
+.booking_details .left-content .amount-btn {
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 24px;
+    display: inline-flex;
+}
+
+.booking_details .left-content .amount-btn .minus,
+.booking_details .left-content .amount-btn .plus{ 
+    padding: 4px 18px;
+    font-size: 32px;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+}
+
+.booking_details .left-content .amount-btn .minus:hover,
+.booking_details .left-content .amount-btn .plus:hover {
+    background-color: var(--primary-color);
+}
+
+.booking_details .left-content .amount-btn .number {
+    padding: 4px 18px;
+    font-size: 22px;
+    width: 80px;
+    text-align: center;
+    user-select: none;    
+    border: 1px solid var(--primary-color);
+    border-bottom: none;
+    border-top: none;
+    opacity: 0.6;
+}
