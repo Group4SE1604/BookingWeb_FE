@@ -20,6 +20,7 @@
 .btn-book {
     border: none;
     padding: 16px 39px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .line {
@@ -103,6 +104,7 @@
     font-size: 32px;
     line-height: 39px;
     margin-bottom: 16px;
+    margin-left: 163px;
 }
 
 .right-title .row-2 {
@@ -167,6 +169,7 @@
 .location-label {
     display: flex;
     gap: 25px;
+    align-items: center;
 }
 
 .location-label .label {
@@ -180,6 +183,8 @@
     line-height: 17px;
     margin-left: 8px;
 }
+
+
 
 .available-rooms h3 {
     margin-bottom: 32px;
@@ -241,6 +246,7 @@
 
 .map .map-title .btn-map {
     border: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .map img {
@@ -302,18 +308,31 @@
 
 }
 
-.review .comment .user-cmt .user .user-name{
+.cmt-info .row-1{
     display: flex;
     margin-bottom: 8px;
+    justify-content: space-between;
 }
 
-.review .comment .user-cmt .user .user-name h3{
+.cmt-info .row-1 h3{
     border-right: 1px solid var(--dark-green);
-    padding: 0 8px;
+    padding: 0 8px 0 0;
 }
 
-.review .comment .user-cmt .user .user-name span{
+.cmt-info .row-1 span{
     margin-left: 8px;
+}
+
+.cmt-info .row-1 .icon i{
+    color: var(--primary-color);
+}
+
+.cmt-info .row-1 .icon .edit-icon{
+    margin-right: 10px;
+}
+
+.user-name{
+    display: flex;
 }
 
 .comment .cmt{
@@ -325,16 +344,7 @@
     width: 45px;
     height: 45px;
     border-radius: 20px;
-}
-
-.icon .edit-icon{
-    margin-bottom: 33px;
-}
-
-.icon .edit-icon,
-.icon .delete-icon{
-   color: var(--primary-color);
-  margin-left: 10px;
+    margin-right: 12px;
 }
 
 .vote-conatainer {
@@ -346,6 +356,7 @@
     z-index: 2000;
     display: flex;
     left: 0;
+    display: none;
 }
 
 .vote-form {
@@ -384,18 +395,11 @@
 }
 
 .vote-form .option {
-    padding: 2rem;
-    border: 1px solid #888;
-}
-
-.vote-form .op-1 {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-}
-
-.vote-form .op-5 {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    padding: 25px 25px;
+    border: 1px solid var(--primary-color);
+    margin-right: 10px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .vote-form .option:hover {
@@ -420,7 +424,7 @@
 .vote-form #op-4:checked:checked~.op-4,
 .vote-form #op-5:checked:checked~.op-5 {
     border-color: #555;
-    background: var(--orange);
+    background: var(--primary-color);
     box-shadow: 0 0 0.8rem rgba(0, 0, 0, .5);
 }
 
@@ -430,7 +434,7 @@
 .vote-form #op-3:checked:checked~.op-3 span,
 .vote-form #op-4:checked:checked~.op-4 span,
 .vote-form #op-5:checked:checked~.op-5 span {
-    color: #fff;
+    color: black;
 }
 
 .vote-form #op-1:checked:checked~.op-1 i,
@@ -438,7 +442,7 @@
 .vote-form #op-3:checked:checked~.op-3 i,
 .vote-form #op-4:checked:checked~.op-4 i,
 .vote-form #op-5:checked:checked~.op-5 i {
-    color: #fff;
+    color: white;
 
 }
 
@@ -459,4 +463,291 @@
 .btn-rate{
     font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
+    border: none;
+}
+
+.vote-conatainer.open{
+    display: flex;
+}
+
+.btn-review{
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* css for responsive */
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
+    .main-wrapper .main-content {
+        padding: 48px 90px 120px;
+    }
+
+    .main-content .left-title .row-1{
+        display: block;
+    }
+
+    .main-content .left-title .row-1 h1 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .main-content .left-title .row-1 .star {
+        font-size: 14px;
+    }
+
+    .left-title .row-2 p {
+        font-size: 12px;
+    }
+
+    .left-title .row-3 span {
+        padding: 6.5px 7px;
+    }
+
+    .right-title h1 {
+        font-size: 28px;
+        margin-left: 180px;
+    }
+
+    .btn-book {
+        padding: 12px 29px;
+    }
+
+    .right-title .row-2 i {
+        padding: 14px;
+        margin-right: 7px;
+        font-size: 12px;
+    }
+
+    .banner {
+        gap: 9px;
+    }
+
+    .title-text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .small-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .overview p {
+        margin-bottom: 26px;
+    }
+
+    .location-label {
+        gap: 20px;
+    }
+
+    .available-rooms .room-type .room-info .left-info img {
+        margin-right: 12px;
+    }
+
+    .available-rooms .room-type .room-info .right-info h5 {
+        font-size: 23px;
+        line-height: 29px;
+        margin-right: 13px;
+    }
+
+    .info-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .main-wrapper .main-content {
+        padding: 45px 75px 120px;
+    }
+
+    .main-content .left-title .row-1{
+        display: block;
+    }
+
+    .left-title .row-2 p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .left-title .row-3 span {
+        padding: 6.5px 8px;
+    }
+
+    .right-title h1 {
+        font-size: 30px;
+        margin-bottom: 42px;
+    }
+
+    .font-size-14 {
+        font-size: 13px;
+    }
+
+    .right-title .row-2 i {
+        padding: 14px;
+        border: 3px solid var(--primary-color);
+        border-radius: 7px;
+        margin-right: 6px;
+        font-size: 12px;
+    }
+
+    .btn-book {
+        padding: 13px 23px;
+    }
+
+    .overview h3 {
+        margin-bottom: 14px;
+    }
+    .title-text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .small-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .overview p {
+        margin-bottom: 26px;
+    }
+
+    .location-label .label {
+        padding: 5.5px;
+        border: 2px solid var(--primary-color);
+        border-radius: 20px;
+    }
+
+    .location-label {
+        gap: 20px;
+    }
+
+    .location-label .label span {
+        font-size: 13px;
+        margin-left: 1px;
+    }
+
+    .available-rooms .room-type .room-info .right-info h5 {
+        font-size: 24px;
+        line-height: 29px;
+        margin-right: 9px;
+    }
+
+    .amenities .decline {
+        gap: 209px;
+    }
+
+    .info-text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width: 739px) {
+    .main-wrapper .main-content {
+        padding: 28px 20px 80px;
+    }
+
+    .main-content .left-title .row-1 h1 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .right-title h1 {
+        margin-left: 25px;
+    }
+
+    .right-title h1 {
+        font-size: 26px;
+        margin-bottom: 19px;
+    }
+
+    .title-icon{
+        margin-bottom: 10px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 6px !important;
+        height: 4px !important;
+        margin: 3px 2px !important;
+    }
+
+    .line {
+        margin: 23px 0;
+    }
+
+    .title-text {
+        font-size: 17px;
+        line-height: 18px;
+    }
+
+    .overview p {
+        margin-bottom: 23px;
+    }
+   
+    .small-text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .location-label {
+        gap: 16px;
+    }
+
+    .location-label .label i{
+        font-size: 12px;
+    }
+
+    .location-label .label span {
+        font-size: 12px;
+        margin-left: 1px;
+    }
+
+    .available-rooms h3 {
+        margin-bottom: 15px;
+    }
+
+    .btn-book {
+        padding: 13px 8px;
+    }
+
+    .available-rooms .room-type .room-info .right-info h5 {
+        font-size: 21px;
+        line-height: 26px;
+        margin-right: 6px;
+    }
+
+    .font-size-14 {
+        font-size: 12px;
+    }
+
+    .available-rooms .room-type .room-info .left-info img {
+        margin-right: 8px;
+        width: 44px;
+        height: 44px;
+        object-fit: cover;
+    }
+
+    .available-rooms .room-type .room-info {
+        padding: 14px;
+    }
+
+    .available-rooms .room-type .room-info .right-info input{
+        font-size: 12px;
+    }
+
+    .map .map-title {
+        margin-top: 29px;
+    }
+
+    .map .map-title input {
+        font-size: 12px;
+    }
+
+    .amenities .decline {
+        gap: 99px;
+    }
+
+    .review-title input{
+        font-size: 12px;
+    }
 }
