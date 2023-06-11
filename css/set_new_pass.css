@@ -187,7 +187,10 @@ html {
 
 .left-wrapper .btn-login {
     width: 100%;
-    border: 1px solid #79747E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
 }
 
 .left-wrapper .extra {

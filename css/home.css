@@ -1,0 +1,415 @@
+.home-title {
+    width: 100%;
+    height: 537px;
+    background-image: url(../images/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-title .title-text {
+    width: 440px;
+    margin: 80px 0 0 160px;
+}
+
+.title-text h1 {
+    font-size: 45px;
+    line-height: 57px;
+}
+
+.title-text p {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.main-content {
+    padding: 48px 104px 120px;
+    position: relative;
+}
+
+.main-content .search-bar {
+    width: 1232px;
+    padding: 32px 24px;
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+    border-radius: 16px;
+    gap: 16px;
+    position: absolute;
+    top: -133px;
+}
+
+.main-content .search-bar h1 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.search-bar .input-input {
+    display: flex;
+}
+
+.main-content .search-bar .input-field {
+    width: 40%;
+}
+
+.search-bar .input-field .input-box {
+    padding: 8px 16px 8px 48px;
+    font-size: 16px;
+    height: 56px;
+    border: 2px solid #79747E;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search-bar .input-field .input-icon {
+    font-size: 16px;
+    color: var(--black-color);
+    position: absolute;
+    top: 0;
+    left: 24px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.search-bar .input-field .input-label {
+    font-size: 16px;
+    position: absolute;
+    transform: translateY(-50%);
+    user-select: none;
+    pointer-events: none;
+    top: 0;
+    left: 16px;
+    background-color: var(--white-color);
+}
+
+.search-bar .input-field .input-box:focus {
+    border-color: var(--primary-color);
+}
+
+.main-content .search-bar .input-field input[type="date"] {
+    padding-left: 16px;
+    padding-right: 8px;
+}
+
+.main-content .search-bar .input-field input[type="date"]::-webkit-calendar-picker-indicator {
+    font-size: 18px;
+}
+
+.main-content .search-bar .input-field:not(:first-child) {
+    width: 20%;
+}
+
+
+.main-content .search-bar .search-btn .btn-icon {
+    margin-top: 32px;
+    width: 142px;
+    height: 48px;
+    text-align: center;
+    padding-top: 14.5px;
+}
+
+
+.search-btn .btn-icon p {
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+.main-content .recent-searches {
+    padding-top: 200px;
+}
+
+.recent-searches .list-city {
+    gap: 91.67px;
+
+    margin-top: 32px;
+    display: flex;
+}
+
+.recent-searches .list-city .city-group {
+    display: flex;
+    align-items: center;
+    width: 245px;
+    height: 90px;
+}
+
+.city-group .city-name {
+    margin-left: 16px;
+}
+
+.city-name h1 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.city-name p {
+    font-size: 12px;
+    line-height: 15px;
+    opacity: 0.75;
+}
+
+.main-content .famous-place {
+    padding-top: 90px;
+}
+
+.famous-place .h-famous-place {
+    gap: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.h-famous-place .hfp-title {
+    width: 881px;
+    height: 92px;
+    position: absolute;
+}
+
+.hfp-title h1 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.hfp-title p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.h-famous-place .see-all-btn {
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    left: 1152px;
+}
+
+.h-famous-place .see-all-btn .btn-icon {
+    width: 80px;
+    height: 40px;
+    position: relative;
+    border: 1px solid #8DD3BB;
+    border-radius: 4px;
+    padding: 11.5px 0;
+}
+
+.see-all-btn p {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.famous-place .f-famous-place {
+    margin-top: 32px;
+}
+
+.famous-place .f-famous-place .ffp-card {
+    display: flex;
+}
+
+.f-famous-place .melbourne {
+    background-image: url(../images/Melbourne.png);
+    background-repeat: no-repeat;
+    width: 296px;
+    height: 420px;
+    margin-right: 16px;
+    padding: 0 24px;
+    position: relative;
+}
+
+.f-famous-place .paris {
+    background-image: url(../images/Paris.png);
+    background-repeat: no-repeat;
+    width: 296px;
+    height: 420px;
+    margin-right: 16px;
+    padding: 0 24px;
+    position: relative;
+}
+
+.f-famous-place .london {
+    background-image: url(../images/London.png);
+    background-repeat: no-repeat;
+    width: 296px;
+    height: 420px;
+    margin-right: 16px;
+    padding: 0 24px;
+    position: relative;
+}
+
+.f-famous-place .columbia {
+    background-image: url(../images/Columbia.png);
+    background-repeat: no-repeat;
+    width: 296px;
+    height: 420px;
+    padding: 0 24px;
+    position: relative;
+}
+
+.ffp-card .card-text {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    position: absolute;
+    bottom: 82px;
+    left: 24px;
+}
+
+.ffp-card .card-text h1 {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.ffp-card .card-text p {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.ffp-card .booking-btn {
+    background-color: #8DD3BB;
+    position: absolute;
+    bottom: 24px;
+    text-align: center;
+    border-radius: 4px;
+    width: 248px;
+    height: 48px;
+}
+
+.booking-btn:hover {
+    background-color: #cdfae9;
+}
+
+.ffp-card .booking-btn p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 15.5px;
+}
+
+.booking-btn .booking-btn-icon {
+    width: 142px;
+    height: 48px;
+    background-color: #8DD3BB;
+}
+
+.fall-into-travel {
+    padding-top: 80px;
+}
+
+.fall-into-travel .h-fall-into-travel {
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.fall-into-travel .h-fall-into-travel .hfit-title {
+    width: 1105px;
+    height: 92px;
+
+}
+
+.hfit-title h1 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.hfit-title p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.h-fall-into-travel .see-all-btn {
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+}
+
+.h-fall-into-travel .see-all-btn .btn-icon {
+    width: 80px;
+    height: 40px;
+    position: relative;
+    border: 1px solid #8DD3BB;
+    border-radius: 4px;
+    padding: 11.5px 0;
+}
+
+.fall-into-travel .f-fall-into-travel {
+    display: flex;
+}
+
+.f-fall-into-travel .backpacking {
+    width: 552px;
+    height: 424px;
+    background-color: #8DD3BB;
+    border-radius: 20px;
+    padding: 24px 24px;
+    position: relative;
+    margin-right: 24px;
+}
+
+.backpacking .backpacking-title {
+    display: flex;
+    gap: 160px;
+}
+
+.backpacking-title h1 {
+    font-size: 40px;
+    line-height: 51px;
+}
+
+.backpacking-title .backpacking-cost {
+    background-color: #FFFFFF;
+    width: 68px;
+    height: 62px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px
+}
+
+.backpacking-cost h1 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.backpacking-cost p {
+    font-family: 'TradeGothic LT Extended';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.backpacking .describe {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.backpacking .backpacking-btn {
+    background: #FFFFFF;
+    bottom: 21px;
+    left: 24px;
+    border-radius: 4px;
+    text-align: center;
+    position: absolute;
+}
+
+.backpacking-btn .backpacking-btn-icon {
+    display: block;
+    width: 504px;
+    height: 48px;
+    padding: 15.5px 204.5px;
+    border-radius: 4px;
+    border: 1px solid #8DD3BB;
+    padding: 11.5px 0;
+}
+
+.backpacking-btn .btn-icon p {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.f-fall-into-travel .backpacking-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 656px;
+}
+
