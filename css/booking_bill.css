@@ -227,3 +227,10 @@
     border-top: none;
     opacity: 0.6;
 }
+
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .main-wrapper .main-content {
+        padding: 48px 72px 120px;
+    }
+}
