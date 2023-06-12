@@ -301,7 +301,7 @@ a.google:hover {
 
 .owl-theme .owl-nav.disabled+.owl-dots {
     position: absolute;
-    bottom: 145px;
+    bottom: 73px;
     left: 50%;
     transform: translateX(-50%);
 }
