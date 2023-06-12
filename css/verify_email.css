@@ -133,20 +133,23 @@ html {
 .left-wrapper .back-to-login {
     margin-top: 65px;
     margin-bottom: 19.5px;
-    font-size: 14px;
-    line-height: 17px;
     display: inline-block;
     text-decoration: none;
     border-radius: 4px;
 }
 
+.left-wrapper .back-to-login .back-login {
+    font-size: 16px;
+    line-height: 17px;
+}
+
 .back-to-login i {
     margin-right: 5px;
-  }
-  
-  .back-to-login:hover {
+}
+
+.back-to-login:hover {
     background-color: #ddd;
-  }
+}
 
 .left-wrapper h1 {
     font-size: 40px;
@@ -204,8 +207,10 @@ html {
 
 .left-wrapper .btn-login {
     width: 100%;
-    border: 1px solid #79747E;
-    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
 }
 
 .left-wrapper .extra {
@@ -298,182 +303,63 @@ html {
         padding: 14px 16px;
     }
 
+    .line {
+        margin: 35px 0;
+    }
+
+    .owl-login .item img {
+        height: 578px;
+    }
+
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        bottom: 15px;
+    }
+
 }
 
 @media only screen and (max-width: 900px) {
     .main-wrapper {
-        padding: 60px;
-        gap: 90px;
-    }
-
-    .left-wrapper {
-        width: 45%;
+        padding: 50px;
+        gap: 95px;
+        justify-content: normal;
     }
 
     .right-wrapper {
-        width: 40%;
+        width: 38%;
     }
 
-    .left-wrapper .logo {
-        height: 35px;
+    .left-wrapper {
+        width: 50%;
     }
 
     .left-wrapper h1 {
-        font-size: 39px;
-        line-height: 40px;
-        margin-top: 37px;
-        margin-bottom: 10px;
+        margin-top: 49px;
     }
-
-    .left-wrapper p {
-        font-size: 14px;
-        margin-bottom: 30px;
-    }
-
-    .left-wrapper .form-login {
-        margin-bottom: 20px;
-    }
-
-    .left-wrapper .form-login .input-box {
-        padding: 12px 11px;
-    }
-
-    .left-wrapper .extra {
-        margin-bottom: 30px;
-    }
-
-    .btn {
-        padding: 14px 16px;
-    }
-
 }
 
 @media only screen and (max-width: 739px) {
     .main-wrapper {
-        padding: 20px;
-        gap: 50px;
-    }
-
-    .left-wrapper {
-        width: 45%;
+        gap: 0;
+        padding: 0 110px;
     }
 
     .right-wrapper {
-        width: 40%;
+        width: 0;
+        display: none;
     }
 
-    .left-wrapper .logo {
-        height: 35px;
+    .left-wrapper {
+        width: 100%;
     }
-
-    .left-wrapper h1 {
-        font-size: 30px;
-        line-height: 25px;
-        margin-top: 30px;
-        margin-bottom: 8px;
-    }
-
-    .left-wrapper p {
-        font-size: 10px;
-        margin-bottom: 18px;
-    }
-
-    .left-wrapper .form-login {
-        margin-bottom: 16px;
-    }
-
-    .left-wrapper .form-login .input-box {
-        padding: 10px 11px;
-    }
-
-    .left-wrapper .form-login label {
-        left: 11px;
-        font-size: 12px;
-    }
-
-    .left-wrapper .extra {
-        margin-bottom: 20px;
-    }
-
-    .left-wrapper .extra .checkbox span {
-        font-size: 10px;
-        margin-left: 2px;
-    }
-
-    .left-wrapper .extra .forgot-pass a {
-        font-size: 9px;
-    }
-
-    .btn {
-        padding: 10px 16px;
-    }
-
-    .left-wrapper .register {
-        font-size: 11px;
-    }
-
 }
 
 @media only screen and (max-width: 480px) {
     .main-wrapper {
-        padding: 16px;
-        gap: 28px;
+        gap: 0;
+        padding: 50px 32px;
     }
 
-    .left-wrapper .logo {
-        height: 30px;
+    .right-wrapper {
+        display: none;
     }
-
-    .left-wrapper h1 {
-        font-size: 25px;
-        line-height: 20px;
-        margin-top: 26px;
-        margin-bottom: 6px;
-    }
-
-    .left-wrapper p {
-        font-size: 7px;
-        margin-bottom: 10px;
-    }
-
-    .left-wrapper .form-login {
-        margin-bottom: 11px;
-    }
-
-    .left-wrapper .form-login .input-box {
-        padding: 4px 11px;
-    }
-
-    .left-wrapper .form-login label {
-        left: 8px;
-        font-size: 9px;
-    }
-
-    .left-wrapper .input-box:focus+label,
-    .left-wrapper .input-box:valid+label {
-        font-size: 8px;
-    }
-
-    .left-wrapper .extra {
-        margin-bottom: 13px;
-    }
-
-    .left-wrapper .extra .checkbox span {
-        font-size: 6px;
-        margin-left: 0px;
-    }
-
-    .left-wrapper .extra .forgot-pass a {
-        font-size: 7px;
-    }
-
-    .btn {
-        padding: 6px 16px;
-        font-size: 13px;
-    }
-
-    .left-wrapper .register {
-        font-size: 10px;
-    }
-
 }
