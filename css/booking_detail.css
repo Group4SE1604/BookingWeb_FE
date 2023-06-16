@@ -109,6 +109,7 @@
 
 .right-title .row-2 {
     text-align: end;
+    display: flex;
 }
 
 .right-title .row-2 i {
@@ -182,6 +183,7 @@
     font-size: 14px;
     line-height: 17px;
     margin-left: 8px;
+    margin-right: 4px;
 }
 
 
