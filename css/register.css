@@ -122,7 +122,7 @@ html {
 }
 
 .left-wrapper {
-    width: 45%;
+    width: 35%;
     border-radius: 30px;
     overflow: hidden;
     max-height: 656px;
@@ -224,7 +224,7 @@ html {
 .right-wrapper .btn-register {
     width: 100%;
     border: 1px solid #79747E;
-    margin-top: 35px;
+    margin-top: 24px;
     margin-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -235,7 +235,7 @@ html {
     text-align: center;
     font-size: 14px;
     line-height: 17px;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 .line {
@@ -245,7 +245,7 @@ html {
     margin: 16px 0;
     background-color: var(--dark-green);
     opacity: 0.25;
-    margin: 40px 0;
+    margin: 24px 0;
 }
 
 .line::before {
