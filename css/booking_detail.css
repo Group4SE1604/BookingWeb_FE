@@ -167,6 +167,16 @@
     margin-bottom: 32px;
 }
 
+.overview-edit .edit-btn{
+    border: none;
+    background: transparent;
+    color: #3f54d3;
+    cursor: pointer;
+}
+.overview-edit .edit-btn i{
+    font-size: 12px;
+}
+
 .location-label {
     display: flex;
     gap: 25px;
@@ -179,11 +189,15 @@
     border-radius: 20px;
 }
 
+.location-label .label .fa-xmark{
+    font-size: 12px;
+}
+
 .location-label .label span {
     font-size: 14px;
     line-height: 17px;
-    margin-left: 8px;
-    margin-right: 4px;
+    margin-left: 4px;
+    margin-right: 3px;
 }
 
 
@@ -265,6 +279,21 @@
     margin-bottom: 34px;
 }
 
+.amen-edit .edit-btn{
+    border: none;
+    background: transparent;
+    color: #3f54d3;
+    cursor: pointer;
+}
+.amen-edit .edit-btn i{
+    font-size: 12px;
+}
+
+/* .amenities .edit-btn{
+    background-color: #fff;
+    color: var(--primary-color);
+} */
+
 .amenities .decline{
     display: flex;
     gap: 388px;
@@ -275,6 +304,184 @@
     gap: 10px;
     margin-bottom: 28px;
 }
+
+.amen-conatainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    display: flex;
+    left: 0;
+    display: none;
+}
+
+.amen-conatainer.open{
+    display: flex;
+}
+
+.amen-form {
+    margin: auto;
+    background: var(--light-green);
+    border-radius: 0.5rem;
+    width: 37rem;
+    max-width: calc(100% - 3.2rem);
+    min-height: 15rem;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.amen-form .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.5rem;
+    padding: 0.8rem 1.8rem;
+}
+
+.amen-form .close-btn:hover {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.amen-form h2 {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.amen-form .select-container{
+    
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-container .left-col,
+.select-container .right-col{
+    width: 50%;
+}
+
+
+
+.amen-form .select-btn{
+    background: #fff;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 0 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px  rgba(0, 0, 0, .1);
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.select-btn .select-text{
+    font-size: 14px;
+}
+
+.select-btn .arrow{
+    display: flex;
+    height: 21px;
+    width: 21px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.select-btn.open .arrow{
+    transform: rotate(-180deg);
+}
+
+.list-items{
+    position: relative;
+    margin-top: 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px  rgba(0, 0, 0, .1);
+    border-radius: 6px;
+    padding: 16px;
+    display: none;
+    height: 300px;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    
+}
+
+.list-items::-webkit-scrollbar{
+    width: 10px;
+    height: 2px;
+}
+
+.list-items::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.list-items::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.select-btn.open ~ .list-items{
+    display: block;
+}
+
+.list-items .item{
+    display: flex;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 5px;
+
+}
+
+.list-items .item:hover{
+    background-color: var(--light-green);
+}
+
+.list-items .item-text{
+    display: flex;
+    gap: 5px;
+}
+
+.item .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 5px;
+    margin-right: 12px;
+    border: 1.5px solid #c0c0c0;
+    transition:  all 0.3s ease-in-out;
+}
+
+.item.checked .checkbox{
+    background-color: var(--primary-color);
+}
+
+.checkbox .check-icon{
+    font-size: 12px;
+    transform: scale(0);
+    transition:  all 0.3s ease-in-out;
+}
+
+.item.checked .check-icon{
+    transform: scale(1);
+}
+
+
+
+
+
 
 .review-title{
     display: flex;
@@ -513,10 +720,15 @@
         padding: 12px 29px;
     }
 
+    .right-title .row-2 {
+        margin-left: 60px;
+    }
+
     .right-title .row-2 i {
         padding: 14px;
         margin-right: 7px;
         font-size: 12px;
+        
     }
 
     .banner {
@@ -536,6 +748,8 @@
     .overview p {
         margin-bottom: 26px;
     }
+
+    
 
     .location-label {
         gap: 20px;
@@ -582,6 +796,10 @@
 
     .font-size-14 {
         font-size: 13px;
+    }
+
+    .right-title .row-2 {
+        margin-left: 58px;
     }
 
     .right-title .row-2 i {
@@ -661,6 +879,12 @@
     .right-title h1 {
         font-size: 26px;
         margin-bottom: 19px;
+    }
+
+    .right-title .row-2 {
+        
+        display: block;
+        
     }
 
     .title-icon{
