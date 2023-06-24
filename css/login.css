@@ -134,14 +134,14 @@ html {
 .left-wrapper h1 {
     font-size: 40px;
     line-height: 51px;
-    margin-top: 75px;
+    margin-top: 50px;
     margin-bottom: 16px;
 }
 
 .left-wrapper p {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 }
 
 .left-wrapper .form-login {
@@ -194,7 +194,7 @@ html {
 }
 
 .left-wrapper .extra {
-    margin-bottom: 44px;
+    margin-bottom: 24px;
     display: flex;
     justify-content: space-between;
 }
@@ -225,7 +225,7 @@ html {
     margin: 28px 0;
     background-color: var(--dark-green);
     opacity: 0.25;
-    margin: 40px 0;
+    margin: 24px 0;
 }
 
 .line::before {
@@ -280,7 +280,7 @@ a.google:hover {
     width: 35%;
     border-radius: 30px;
     overflow: hidden;
-    max-height: 656px;
+    max-height: 608px;
     
 }
 
@@ -301,7 +301,7 @@ a.google:hover {
 
 .owl-theme .owl-nav.disabled+.owl-dots {
     position: absolute;
-    bottom: 73px;
+    bottom: 115px;
     left: 50%;
     transform: translateX(-50%);
 }
