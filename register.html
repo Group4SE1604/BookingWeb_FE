@@ -53,43 +53,60 @@
                     </div>
                 </div>
                 <div class="decline-row">
-                    <div class="form-register">
-                        <input type="text" class="input-box" name="email" required>
-                        <label for="">Email</label>
+                    <div class="email-in-form">
+                        <div class="form-register">
+                            <input type="text" id="email" class="input-box" name="email" required>
+                            <label for="" id="error-label-email">Email</label>
+                        </div>
+                        <span id="errorEmailText"></span>
                     </div>
-                    <div class="form-register">
-                        <input type="text" class="input-box" name="phoneNumber" required>
-                        <label for="">Phone Number</label>
-                    </div>
-                </div>
-                <div class="form-register">
-                    <input type="password" class="input-box input-pass font-weight-400 text-dark" name="password"
-                        required>
-                    <label for="">Password</label>
-                    <div class="eye">
-                        <i class="eye-icon fa-solid fa-eye-slash"></i>
+                    <div class="phone-in-form">
+                        <div class="form-register">
+                            <input type="text" id="phone" class="input-box" name="phoneNumber" required>
+                            <label for="" id="error-label-phone">Phone Number</label>
+                        </div>
+                        <span id="errorPhoneText"></span>
                     </div>
                 </div>
-                <div class="form-register">
-                    <input type="password" class="input-box input-pass font-weight-400 text-dark" name="rePassword"
-                        required>
-                    <label for="">Confirm Password</label>
-                    <div class="eye">
-                        <i class="eye-icon fa-solid fa-eye-slash"></i>
+                <div class="pass-in-form">
+                    <div class="form-register">
+                        <input type="password" id="password" class="input-box input-pass font-weight-400 text-dark" name="password"
+                            required>
+                        <label for="" id="pass-label">Password</label>
+                        <div class="eye">
+                            <i class="eye-icon fa-solid fa-eye-slash"></i>
+                        </div>
                     </div>
+                    <span class="errorPass" id="passwordError"></span>
+                    <span class="warningPass" id="passwordWarning"></span>
+                </div>
+                <div class="rePass-in-form">
+                    <div class="form-register">
+                        <input type="password" id="reEnterPassword" class="input-box input-pass font-weight-400 text-dark" name="rePassword"
+                            required>
+                        <label for="" id="re-pass-label">Confirm Password</label>
+                        <div class="eye">
+                            <i class="eye-icon fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div>
+                    <span class="errorRePass" id="rePasswordError"></span>
                 </div>
                 <div class="extra">
                     <input type="checkbox">
-                    <span class="text-dark-green font-weight-500">I agree to all the <a href="#" class="text-slamon font-weight-500">Terms</a> and <a href="#" class="text-slamon font-weight-500">Privacy Policies</a></span>
+                    <span class="text-dark-green font-weight-500">I agree to all the <a href="#"
+                            class="text-slamon font-weight-500">Terms</a> and <a href="#"
+                            class="text-slamon font-weight-500">Privacy Policies</a></span>
                 </div>
-                <input type="submit" value="Create account" class="btn btn-register dark-green bg-primary font-weight-600">
+                <input type="submit" value="Create account"
+                    class="btn btn-register dark-green bg-primary font-weight-600">
             </form>
             <div class="login">
-                <span class="text-dark-green font-weight-500">Already have an account?<a href="#" class="login-link text-slamon font-weight-500"> Login</a></span>
+                <span class="text-dark-green font-weight-500">Already have an account?<a href="#"
+                        class="login-link text-slamon font-weight-500"> Login</a></span>
             </div>
             <div class="line"></div>
             <div class="media-options">
-                <a href="#"class="field google">
+                <a href="#" class="field google">
                     <img src="images/google.png" alt="" class="google-img">
                     <span>Sign up with Google</span>
                 </a>
@@ -99,6 +116,8 @@
 </body>
 <script src="./js/jquery-3.6.1.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
-<script src="js/register.js"></script>
+<script src="./js/login.js"></script>
+<script src="./js/error.js"></script>
+<script src="./js/error_pass.js"></script>
 
-</html>
+</html> 

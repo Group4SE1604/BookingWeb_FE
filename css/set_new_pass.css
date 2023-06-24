@@ -9,6 +9,10 @@
     --dark-color: #1C1B1F;
     --light-color: #FAFBFC;
     --slamon-color: #FF8682;
+    --yellow-color: yellow;
+    --red-color: red;
+    --green-color: green;
+
 }
 
 * {
@@ -27,6 +31,18 @@ html {
 
 .text-white {
     color: var(--white-color) !important;
+}
+
+.text-red {
+    color: var(--red-color) !important;
+}
+
+.text-yellow {
+    color: var(--yellow-color) !important;
+}
+
+.text-green {
+    color: var(--green-color) !important;
 }
 
 .text-dark-green {
@@ -145,7 +161,8 @@ html {
 }
 
 .left-wrapper .form-getpass {
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
+    margin-top: 10px;
     position: relative;
 }
 
@@ -160,6 +177,76 @@ html {
     width: 100%;
 }
 
+
+.left-wrapper .pass-in-form span{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.left-wrapper .rePass-in-form span{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.errorPass {
+    color: #E74A3B;
+}
+
+
+.warningPass{
+    color: #F6C23E;  
+}
+
+.errorRePass{
+    color:  #E74A3B;
+}
+
+.valid-label {
+    color: var(--primary-color);
+}
+
+.warning-label {
+    color: #F6C23E;
+}
+
+.error-label {
+    color: #E74A3B;
+}
+
+.error-input {
+    border: 2px solid #E74A3B;
+    border-radius: 4px;
+    outline-color: #E74A3B;
+    padding: 18px 16px;
+    font-size: 16px;
+    line-height: 20px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.warning-input {
+    border: 2px solid #F6C23E;
+    border-radius: 4px;
+    outline-color: #F6C23E;
+    padding: 18px 16px;
+    font-size: 16px;
+    line-height: 20px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.valid-input {
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    outline-color: var(--primary-color);
+    padding: 18px 16px;
+    font-size: 16px;
+    line-height: 20px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+
 .left-wrapper .form-getpass label {
     position: absolute;
     left: 16px;
@@ -169,7 +256,11 @@ html {
     pointer-events: none;
     transition: all 0.3s ease-in-out;
 }
-
+.left-wrapper .error-input:focus+label,
+.left-wrapper .error-input:valid+label,
+.left-wrapper .warning-input:focus+label,
+.left-wrapper .warning-input:valid+label,
+.left-wrapper .valid-input:valid+label,
 .left-wrapper .input-box:focus+label,
 .left-wrapper .input-box:valid+label {
     top: 0px;
@@ -191,6 +282,7 @@ html {
     font-size: 14px;
     line-height: 17px;
     border: none;
+    margin-top: 24px;
 }
 
 .left-wrapper .extra {
@@ -243,6 +335,8 @@ html {
     transform: translateX(-50%);
 }
 
+
+
 /* css for respnsive */
 @media only screen and (min-width: 900px) and (max-width: 1100px) {
     .main-wrapper {
@@ -280,182 +374,63 @@ html {
         padding: 14px 16px;
     }
 
+    .line {
+        margin: 35px 0;
+    }
+
+    .owl-login .item img {
+        height: 578px;
+    }
+
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        bottom: 15px;
+    }
+
 }
 
 @media only screen and (max-width: 900px) {
     .main-wrapper {
-        padding: 60px;
-        gap: 90px;
-    }
-
-    .left-wrapper {
-        width: 45%;
+        padding: 50px;
+        gap: 95px;
+        justify-content: normal;
     }
 
     .right-wrapper {
-        width: 40%;
+        width: 38%;
     }
 
-    .left-wrapper .logo {
-        height: 35px;
+    .left-wrapper {
+        width: 50%;
     }
 
     .left-wrapper h1 {
-        font-size: 39px;
-        line-height: 40px;
-        margin-top: 37px;
-        margin-bottom: 10px;
+        margin-top: 49px;
     }
-
-    .left-wrapper p {
-        font-size: 14px;
-        margin-bottom: 30px;
-    }
-
-    .left-wrapper .form-login {
-        margin-bottom: 20px;
-    }
-
-    .left-wrapper .form-login .input-box {
-        padding: 12px 11px;
-    }
-
-    .left-wrapper .extra {
-        margin-bottom: 30px;
-    }
-
-    .btn {
-        padding: 14px 16px;
-    }
-
 }
 
 @media only screen and (max-width: 739px) {
     .main-wrapper {
-        padding: 20px;
-        gap: 50px;
-    }
-
-    .left-wrapper {
-        width: 45%;
+        gap: 0;
+        padding: 0 110px;
     }
 
     .right-wrapper {
-        width: 40%;
+        width: 0;
+        display: none;
     }
 
-    .left-wrapper .logo {
-        height: 35px;
+    .left-wrapper {
+        width: 100%;
     }
-
-    .left-wrapper h1 {
-        font-size: 30px;
-        line-height: 25px;
-        margin-top: 30px;
-        margin-bottom: 8px;
-    }
-
-    .left-wrapper p {
-        font-size: 10px;
-        margin-bottom: 18px;
-    }
-
-    .left-wrapper .form-login {
-        margin-bottom: 16px;
-    }
-
-    .left-wrapper .form-login .input-box {
-        padding: 10px 11px;
-    }
-
-    .left-wrapper .form-login label {
-        left: 11px;
-        font-size: 12px;
-    }
-
-    .left-wrapper .extra {
-        margin-bottom: 20px;
-    }
-
-    .left-wrapper .extra .checkbox span {
-        font-size: 10px;
-        margin-left: 2px;
-    }
-
-    .left-wrapper .extra .forgot-pass a {
-        font-size: 9px;
-    }
-
-    .btn {
-        padding: 10px 16px;
-    }
-
-    .left-wrapper .register {
-        font-size: 11px;
-    }
-
 }
 
 @media only screen and (max-width: 480px) {
     .main-wrapper {
-        padding: 16px;
-        gap: 28px;
+        gap: 0;
+        padding: 50px 32px;
     }
 
-    .left-wrapper .logo {
-        height: 30px;
+    .right-wrapper {
+        display: none;
     }
-
-    .left-wrapper h1 {
-        font-size: 25px;
-        line-height: 20px;
-        margin-top: 26px;
-        margin-bottom: 6px;
-    }
-
-    .left-wrapper p {
-        font-size: 7px;
-        margin-bottom: 10px;
-    }
-
-    .left-wrapper .form-login {
-        margin-bottom: 11px;
-    }
-
-    .left-wrapper .form-login .input-box {
-        padding: 4px 11px;
-    }
-
-    .left-wrapper .form-login label {
-        left: 8px;
-        font-size: 9px;
-    }
-
-    .left-wrapper .input-box:focus+label,
-    .left-wrapper .input-box:valid+label {
-        font-size: 8px;
-    }
-
-    .left-wrapper .extra {
-        margin-bottom: 13px;
-    }
-
-    .left-wrapper .extra .checkbox span {
-        font-size: 6px;
-        margin-left: 0px;
-    }
-
-    .left-wrapper .extra .forgot-pass a {
-        font-size: 7px;
-    }
-
-    .btn {
-        padding: 6px 16px;
-        font-size: 13px;
-    }
-
-    .left-wrapper .register {
-        font-size: 10px;
-    }
-
 }

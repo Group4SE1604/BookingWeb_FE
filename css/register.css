@@ -132,6 +132,83 @@ html {
     width: 35%;
 }
 
+.decline-row .email-in-form span {
+    font-size: 14px;
+    color: #E74A3B;
+}
+
+.decline-row .phone-in-form span {
+    font-size: 14px;
+    color: #E74A3B;
+}
+
+.pass-in-form span {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.rePass-in-form span {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.errorPass {
+    color: #E74A3B;
+}
+
+.warningPass {
+    color: #F6C23E;
+}
+
+
+.valid-label {
+    color: var(--primary-color);
+}
+
+.warning-label {
+    color: #F6C23E;
+}
+
+.error-label {
+    color: #E74A3B;
+}
+
+.error-input {
+    border: 2px solid #E74A3B;
+    border-radius: 4px;
+    outline-color: #E74A3B;
+    padding: 18px 16px;
+    font-size: 16px;
+    line-height: 20px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.warning-input {
+    border: 2px solid #F6C23E;
+    border-radius: 4px;
+    outline-color: #F6C23E;
+    padding: 18px 16px;
+    font-size: 16px;
+    line-height: 20px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.valid-input {
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    outline-color: var(--primary-color);
+    padding: 18px 16px;
+    font-size: 16px;
+    line-height: 20px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+
 .owl-register .item img {
     width: 100%;
     height: 100vh;
@@ -158,7 +235,7 @@ html {
 .right-wrapper h1 {
     font-size: 30px;
     line-height: 20px;
-    margin-top: 23px;
+    margin-top: 40px;
     margin-bottom: 13px;
 }
 
@@ -175,7 +252,8 @@ html {
 }
 
 .right-wrapper .form-register {
-    margin-bottom: 12px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     position: relative;
     width: 100%;
 }
@@ -201,6 +279,11 @@ html {
     transition: all 0.3s ease-in-out;
 }
 
+.right-wrapper .error-input:focus+label,
+.right-wrapper .error-input:valid+label,
+.right-wrapper .warning-input:focus+label,
+.right-wrapper .warning-input:valid+label,
+.right-wrapper .valid-input:valid+label,
 .right-wrapper .input-box:focus+label,
 .right-wrapper .input-box:valid+label {
     top: 0px;
@@ -216,6 +299,10 @@ html {
     cursor: pointer;
 }
 
+.right-wrapper .extra {
+    margin-top: 8px;
+}
+
 .right-wrapper .extra span {
     font-size: 14px;
     line-height: 17px;
@@ -224,7 +311,7 @@ html {
 .right-wrapper .btn-register {
     width: 100%;
     border: 1px solid #79747E;
-    margin-top: 24px;
+    margin-top: 23px;
     margin-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -235,17 +322,16 @@ html {
     text-align: center;
     font-size: 14px;
     line-height: 17px;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
 }
 
 .line {
     position: relative;
     height: 1px;
     width: 100%;
-    margin: 16px 0;
     background-color: var(--dark-green);
     opacity: 0.25;
-    margin: 24px 0;
+    margin-bottom: 15px;
 }
 
 .line::before {
@@ -320,9 +406,6 @@ a.google:hover {
         font-size: 12px;
     }
 
-    .right-wrapper .form-register {
-        margin-bottom: 17px;
-    }
 
     .right-wrapper .extra span {
         font-size: 11px;
@@ -343,7 +426,7 @@ a.google:hover {
         text-align: center;
         font-size: 12px;
         line-height: 17px;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
 
     .line::before {
@@ -368,11 +451,11 @@ a.google:hover {
         justify-content: normal;
     }
 
-    .left-wrapper{
+    .left-wrapper {
         width: 38%;
     }
 
-    .right-wrapper{
+    .right-wrapper {
         width: 50%;
     }
 
@@ -385,11 +468,11 @@ a.google:hover {
         padding: 0 110px;
     }
 
-    .left-wrapper{
-       width: 0;
+    .left-wrapper {
+        width: 0;
     }
 
-    .right-wrapper{
+    .right-wrapper {
         width: 100%;
     }
 }
