@@ -314,6 +314,10 @@ html {
 
 .right-wrapper {
     width: 35%;
+    border-radius: 30px;
+    overflow: hidden;
+    max-height: 656px;
+    
 }
 
 .owl-login .item img {

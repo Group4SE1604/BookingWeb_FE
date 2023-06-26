@@ -41,7 +41,7 @@
             <h1 class="text-black font-weight-700">Sign Up</h1>
             <p class="text-dark-green font-weight-400">Let’s get you all st up so you can access your personal account.
             </p>
-            <form>
+            <form id="form" onsubmit="return validateForm()">
                 <div class="decline-row">
                     <div class="form-register">
                         <input type="text" class="input-box" name="firstName" required>
@@ -92,7 +92,7 @@
                     <span class="errorRePass" id="rePasswordError"></span>
                 </div>
                 <div class="extra">
-                    <input type="checkbox">
+                    <input type="checkbox" required>
                     <span class="text-dark-green font-weight-500">I agree to all the <a href="#"
                             class="text-slamon font-weight-500">Terms</a> and <a href="#"
                             class="text-slamon font-weight-500">Privacy Policies</a></span>
@@ -116,7 +116,7 @@
 </body>
 <script src="./js/jquery-3.6.1.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
-<script src="./js/login.js"></script>
+<script src="./js/register.js"></script>
 <script src="./js/error.js"></script>
 <script src="./js/error_pass.js"></script>
 
