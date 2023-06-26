@@ -51,6 +51,7 @@
 
 .search-bar .input-input {
     display: flex;
+    gap: 7px;
 }
 
 .main-content .search-bar .input-field {
@@ -558,7 +559,7 @@
     }
 
     .main-content .search-bar .input-field:not(:first-child) {
-        width: 33%;
+        width: 30%;
     }
 
     .search-bar .input-field .input-box:focus {

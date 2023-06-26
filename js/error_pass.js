@@ -18,7 +18,7 @@ function validatePassword() {
   var isValidLength = password.length < 8;
   var isMatching = password === reEnterPassword;
   //đúng hết điều kiện
-  if (hasUppercase && hasLowercase && hasNumber && password.length > 13) {
+  if (hasUppercase && hasLowercase && hasNumber && password.length > 8) {
     //có giống với confirm pass
     if (isMatching) {
       errorPassText.textContent = '';
@@ -26,7 +26,7 @@ function validatePassword() {
       errorRePassText.textContent = '';
       errorPassText.classList.remove('errorPass');
       warningPassText.classList.remove('warningPass');
-      errorRePassText.classList.remove('errorRePass');
+      errorRePassText.classList.remove('errorPass');
       errorLabelPass.classList.add('valid-label');
       errorLabelPass.classList.remove('error-label');
       errorLabelRePass.classList.add('valid-label');
@@ -46,7 +46,7 @@ function validatePassword() {
       errorRePassText.textContent = 'Re-entered password does not match.';
       errorPassText.classList.remove('errorPass');
       warningPassText.classList.remove('warningPass');
-      errorRePassText.classList.add('errorRePass');
+      errorRePassText.classList.add('errorPass');
       errorLabelPass.classList.add('valid-label');
       errorLabelPass.classList.remove('error-label');
       errorLabelPass.classList.remove('warning-label');
@@ -62,15 +62,15 @@ function validatePassword() {
     }
   }
   //số ký tự 8-13
-  else if (hasUppercase && hasLowercase && hasNumber && 8 < password.length <= 13) {
+  else if (hasUppercase || hasLowercase || hasNumber && 8 <= password.length) {
     //giong
     if (isMatching) {
-      warningPassText.textContent = 'Password loss should be more than 13 characters.';
+      warningPassText.textContent = 'Password should have at least 1 uppercase, 1 lowercase, 1 number and more than 8 characters.';
       errorPassText.textContent = '';
       errorRePassText.textContent = '';
       errorPassText.classList.remove('errorPass');
       warningPassText.classList.add('warningPass');
-      errorRePassText.classList.remove('errorRePass');
+      errorRePassText.classList.remove('errorPass');
       errorLabelPass.classList.remove('valid-label');
       errorLabelPass.classList.remove('error-label');
       errorLabelPass.classList.add('warning-label');
@@ -88,11 +88,11 @@ function validatePassword() {
     //khong giong
     else {
       errorPassText.textContent = '';
-      warningPassText.textContent = 'Password loss should be more than 13 characters.';
+      warningPassText.textContent = 'Password should have at least 1 uppercase, 1 lowercase, 1 number and more than 8 characters.';
       errorRePassText.textContent = 'Re-entered password does not match.';
       errorPassText.classList.remove('errorPass');
       warningPassText.classList.add('warningPass');
-      errorRePassText.classList.add('errorRePass');
+      errorRePassText.classList.add('errorPass');
       errorLabelPass.classList.remove('valid-label');
       errorLabelPass.classList.remove('error-label');
       errorLabelPass.classList.add('warning-label');
@@ -125,16 +125,6 @@ function validatePassword() {
         warningPassText.textContent = '';
         errorPassText.textContent = 'Password must be at least 8 characters.';
       }
-      else if (!hasUppercase) {
-        warningPassText.textContent = '';
-        errorPassText.textContent = 'Password must contain at least 1 capital letter.';
-      } else if (!hasLowercase) {
-        warningPassText.textContent = '';
-        errorPassText.textContent = 'Password must contain at least 1 lowercase letter.';
-      } else if (!hasNumber) {
-        warningPassText.textContent = '';
-        errorPassText.textContent = 'Password must contain at least 1 number.';
-      }
       errorRePassText.textContent = '';
       errorRePassText.classList.remove('errorPass');
       errorLabelRePass.classList.add('valid-label');
@@ -149,19 +139,9 @@ function validatePassword() {
         warningPassText.textContent = '';
         errorPassText.textContent = 'Password must be at least 8 characters.';
       }
-      else if (!hasUppercase) {
-        warningPassText.textContent = '';
-        errorPassText.textContent = 'Password must contain at least 1 capital letter.';
-      } else if (!hasLowercase) {
-        warningPassText.textContent = '';
-        errorPassText.textContent = 'Password must contain at least 1 lowercase letter.';
-      } else if (!hasNumber) {
-        warningPassText.textContent = '';
-        errorPassText.textContent = 'Password must contain at least 1 number.';
-      }
-      
+
       errorRePassText.textContent = 'Re-entered password does not match.';
-      errorRePassText.classList.add('errorRePass');
+      errorRePassText.classList.add('errorPass');
       errorLabelRePass.classList.add('error-label');
       rePasswordInput.classList.add('error-input');
     }
@@ -172,3 +152,63 @@ function validatePassword() {
 }
 passwordInput.addEventListener('input', validatePassword);
 rePasswordInput.addEventListener('input', validatePassword);
+
+form.onsubmit = function (event) {
+  const pass = passwordInput.value;
+  const rePass = rePasswordInput.value;
+  if (pass.length < 8) {
+    event.preventDefault();
+    warningPassText.textContent = '';
+    warningPassText.classList.remove('warningPass');
+    errorLabelPass.classList.remove('valid-label');
+    errorLabelPass.classList.remove('warning-label');
+    passwordInput.classList.remove('valid-input');
+    passwordInput.classList.remove('warning-input');
+    passwordInput.classList.remove('input-box');
+    //giong
+    if (isMatching) {
+      event.preventDefault();
+      errorLabelRePass.classList.remove('error-label');
+      rePasswordInput.classList.remove('error-input');
+      rePasswordInput.classList.remove('input-box');
+      if (isValidLength) {
+        warningPassText.textContent = '';
+        errorPassText.textContent = 'Password must be at least 8 characters.';
+      }
+      errorRePassText.textContent = '';
+      errorRePassText.classList.remove('errorPass');
+      errorLabelRePass.classList.add('valid-label');
+      rePasswordInput.classList.add('valid-input');
+    }
+    //
+    else {
+      event.preventDefault();
+      errorLabelRePass.classList.remove('valid-label');
+      rePasswordInput.classList.remove('valid-input');
+      rePasswordInput.classList.remove('input-box');
+      if (isValidLength) {
+        warningPassText.textContent = '';
+        errorPassText.textContent = 'Password must be at least 8 characters.';
+      }
+
+      errorRePassText.textContent = 'Re-entered password does not match.';
+      errorRePassText.classList.add('errorPass');
+      errorLabelRePass.classList.add('error-label');
+      rePasswordInput.classList.add('error-input');
+    }
+    errorLabelPass.classList.add('error-label');
+    passwordInput.classList.add('error-input');
+    errorPassText.classList.add('errorPass');
+  }
+
+  if (rePass != pass) {
+    event.preventDefault();
+    errorLabelRePass.classList.remove('valid-label');
+    rePasswordInput.classList.remove('valid-input');
+    rePasswordInput.classList.remove('input-box');
+    errorRePassText.textContent = 'Re-entered password does not match.';
+    errorRePassText.classList.add('errorPass');
+    errorLabelRePass.classList.add('error-label');
+    rePasswordInput.classList.add('error-input');
+  }
+};
