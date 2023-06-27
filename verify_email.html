@@ -14,6 +14,7 @@
     <!-- Link owl carousel -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <script src="./js/verify_code.js" defer></script>
     <!-- Link JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
@@ -33,16 +34,18 @@
             <form action="">
                 
                 <div class="form-login">
-                    <input type="password" class="input-box input-pass font-weight-400 text-dark" name="password" required>
-                    <label for="">Enter code</label>
-                    <div class="eye">
-                        <i class="eye-icon fa-solid fa-eye-slash"></i>
+                    <div class="form-inputs">
+                        <input type="number" class="input-box input-pass font-weight-500 text-dark" name="x">
+                        <input type="number" class="input-box input-pass font-weight-500 text-dark" name="y" disabled>
+                        <input type="number" class="input-box input-pass font-weight-500 text-dark" name="z" disabled>
+                        <input type="number" class="input-box input-pass font-weight-500 text-dark" name="t" disabled>
                     </div>
+                    
                 </div>
                 <div class="register">
                     <span class="text-dark-green font-weight-500">Didn’t receive a code? <a href="#" class="register-link text-slamon">Resend</a></span>
                 </div>
-                <input type="submit" value="Verify" class="btn btn-login font-weight-600 dark-green bg-primary">
+                <input id="button" type="submit" value="Verify" class="btn btn-login font-weight-600 dark-green bg-primary">
             </form>
             
             
