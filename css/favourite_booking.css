@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 .booking-card {
   background: #ffffff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -25,6 +27,16 @@
   height: 100%;
   object-fit: cover;
 }
+.ml-1 {
+  margin-left: 10px;
+}
+.ml-2 {
+  margin-left: 20px;
+}
+.mr-1 {
+  margin-right:10px ;
+}
+
 
 .detail-wrapper {
   flex-basis: 80%;
@@ -119,5 +131,21 @@
   }
   .hotel-img img {
     border-radius: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .price {
+    font-size: 1rem;
+  }
+  .price-title {
+    font-size: 0.8rem;
+
+  }
+  .hotel-star {
+    font-size: .7rem;
+
+  }
+  .detail-wrapper {
+    gap: 1rem;
   }
 }
