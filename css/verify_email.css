@@ -103,7 +103,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.active {
+.btn-icon.active {
     color: white !important;
     opacity: 0.8;
     cursor: pointer;
@@ -116,7 +116,7 @@ html {
     display: flex;
     justify-content: center;
     gap: 134px;
-    margin: auto;
+    
     height: 100vh;
     padding: 104px;
 }
@@ -240,7 +240,7 @@ html {
 
 .owl-login .item img {
     width: 100%;
-    height: 617px;
+    height: 514px;
     object-fit: cover;
     border-radius: 30px;
 }
