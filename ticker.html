@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Ticker</title>
+    <!-- Link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/ticker.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- header -->
+        <header>
+            <div class="logo">
+                <img src="./images/header_logo.svg" alt="logo-image" class="logo-img">
+            </div>
+            <ul class="navbar">
+                <!-- <li class="navbar-item"><a href="#" class="item-text">Login</a></li>
+                <li class="navbar-item">
+                    <a href="#" class="btn bg-dark text-white font-weight-600">Sign up</a>
+                </li> -->
+
+                <li class="navbar-item">
+                    <a href="#" class="item-text favourite">
+                        <i class="fa-solid fa-heart"></i>
+                        Favourites
+                    </a>
+                </li>
+                <li class="navbar-item user-section">
+                    <div class="active-status"></div>
+                    <img src="./images/khangne.png" alt="User-Avatar" class="user-avatar">
+                    <p class="user-name">Enailis.N</p>
+                    <div class="card-information bg-white">
+                        <div class="user-profile">
+                            <img src="./images/khangne.png" alt="user-avatar" class="user-avatar">
+                            <div class="user-info">
+                                <p class="name text-dark-green font-weight-600">Enailis.N</p>
+                                <p class="status text-dark-green font-weight-400">Online</p>
+                            </div>
+                        </div>
+                        <div class="card-btns">
+                            <a href="#" class="item-btn text-dark-green font-weight-500">
+                                <div class="btn-name">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>My account</span>
+                                </div>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </a>
+                            <a href="#" class="item-btn text-dark-green font-weight-500">
+                                <div class="btn-name">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span>Settings</span>
+                                </div>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </a>
+                        </div>
+                        <div class="card-btns">
+                            <a href="#" class="item-btn text-dark-green font-weight-500">
+                                <div class="btn-name">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                    <span>Support</span>
+                                </div>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </a>
+                            <a href="#" class="item-btn text-dark-green font-weight-500">
+                                <div class="btn-name">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    <span>Log out</span>
+                                </div>
+                                <i class="fa-solid fa-greater-than"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="icon-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu-mobile">
+                <div class="content-wrapper bg-main">
+                    <div class="user-profile">
+                        <div class="user-status"></div>
+                        <img src="./images/khangne.png" alt="user-avatar" class="user-avatar">
+                        <div class="user-info">
+                            <p class="name text-dark-green font-weight-600">Enailis.N</p>
+                            <p class="status text-dark-green font-weight-400">Online</p>
+                        </div>
+                    </div>
+                    <div class="card-btns">
+                        <a href="#" class="item-btn text-dark-green font-weight-500">
+                            <div class="btn-name">
+                                <i class="fa-solid fa-user"></i>
+                                <span>My account</span>
+                            </div>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                        <a href="#" class="item-btn text-dark-green font-weight-500">
+                            <div class="btn-name">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Settings</span>
+                            </div>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                    </div>
+                    <div class="card-btns">
+                        <a href="#" class="item-btn text-dark-green font-weight-500">
+                            <div class="btn-name">
+                                <i class="fa-solid fa-life-ring"></i>
+                                <span>Support</span>
+                            </div>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                        <a href="#" class="item-btn text-dark-green font-weight-500">
+                            <div class="btn-name">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span>Log out</span>
+                            </div>
+                            <i class="fa-solid fa-greater-than"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Main content -->
+        <div class="main-content bg-main">
+            <div class="title">
+                <div class="left-content">
+                    <h1 class="hotel-name font-weight-700 text-dark-green">CVK Park Bosphorus Hotel Istanbul</h1>
+                    <p class="city text-dark-green font-weight-500">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437
+                    </p>
+                </div>
+                <div class="right-content">
+                    <p class="hotel-price text-red font-weight-700">$240</p>
+                    <div class="row-2">
+                        <i class="fa-solid fa-share-nodes share"></i>
+                        <button class="btn bg-primary font-weight-600 text-dark-green" id="btn-down" type="submit" >Download</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ticker" id="ticker">
+                <div class="ticker-date">
+                    <div class="check">
+                        <h4 class="font-weight-600 text-dark-green">Thur, Dec 8</h4>
+                        <p class="font-weight-500 text-dark-green">Check-In</p>
+                    </div>
+                    <div class="buiding">
+                        <img src="./images/Vector.svg" alt="" class="vector">
+                        <img src="./images/building.svg" alt="">
+                        <img src="./images/Vector.svg" alt="" class="vector vector-2">
+                    </div>
+                    <div class="check">
+                        <h4 class="font-weight-600 text-dark-green">Thur, Dec 8</h4>
+                        <p class="font-weight-500 text-dark-green">Check-out</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="cus">
+                        <div class="name">
+                            <img src="./images/khangne.png" alt="">
+                            <h4 class="font-weight-700 text-dark-green">Khang ne</h4>
+                        </div>
+                        <p class="font-weight-700 text-dark-green room">Superior room - 1 double bed or 2 twin beds</p>
+                    </div>
+                    <div class="time">
+                        <div class="col check-in">
+                            <i class="fa-solid fa-clock"></i>
+                            <div class="content">
+                                <p class="font-weight-600 text-dark-green">Check-In time</p>
+                                <h5 class="font-weight-500 text-dark-green">12:00pm</h5>
+                            </div>
+                        </div>
+                        <div class="col check-out">
+                            <i class="fa-solid fa-clock"></i>
+                            <div class="content">
+                                <p class="font-weight-600 text-dark-green">Check-out time</p>
+                                <h5 class="font-weight-500 text-dark-green">11:30pm</h5>
+                            </div>
+                        </div>
+                        <div class="col room">
+                            <i class="fa-solid fa-door-closed"></i>
+                            <div class="content">
+                                <p class="font-weight-600 text-dark-green">Room no.</p>
+                                <h5 class="font-weight-500 text-dark-green">On arival</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code">
+                        <h1 class="font-weight-600 text-dark-green">EK</h1>
+                        <p class="font-weight-500 text-dark-green">ABC12345</p>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <img src="./images/logo_hotel.png" alt="" class="logo-hotel">
+                </div>
+
+            </div>
+
+            <div class="term">
+                <h1 class="font-weight-600 text-dark-green">Terms and Conditions</h1>
+                <div class="payment">
+                    <h4 class="font-weight-500 text-dark-green">Payments</h4>
+                    <ul>
+                        <li class="font-weight-400 text-dark-green">If you are purchasing your ticket using a debit or
+                            credit card via the Website, we will process these payments via the automated secure common
+                            payment gateway which will be subject to fraud screening purposes. </li>
+                        <li class="font-weight-400 text-dark-green">If you do not supply the correct card billing
+                            address and/or cardholder information, your booking will not be confirmed and the overall
+                            cost may increase. We reserve the right to cancel your booking if payment is declined for
+                            any reason or if you have supplied incorrect card information. If we become aware of, or is
+                            notified of, any fraud or illegal activity associated with the payment for the booking, the
+                            booking will be cancelled and you will be liable for all costs and expenses arising from
+                            such cancellation, without prejudice to any action that may be taken against us.</li>
+                        <li class="font-weight-400 text-dark-green">Golobe may require the card holder to provide
+                            additional payment verification upon request by either submitting an online form or visiting
+                            the nearest Golobe office, or at the airport at the time of check-in. Golobe reserves the
+                            right to deny boarding or to collect a guarantee payment (in cash or from another credit
+                            card) if the card originally used for the purchase cannot be presented by the cardholder at
+                            check-in or when collecting the tickets, or in the case the original payment has been
+                            withheld or disputed by the card issuing bank. Credit card details are held in a secured
+                            environment and transferred through an internationally accepted system.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <h4 class="font-weight-500 text-dark-green">Contact Us</h4>
+                <ul>
+                    <li class="font-weight-400 text-dark-green">If you have any questions about our Website or our Terms
+                        of Use, please contact:</li>
+                    <li class="font-weight-400 text-dark-green">Golobe Group Q.C.S.C</li>
+                    <li class="font-weight-400 text-dark-green">Golobe Tower</li>
+                    <li class="font-weight-400 text-dark-green">P.O. Box: 22550</li>
+                    <li class="font-weight-400 text-dark-green">Doha, State of Qatar</li>
+                    <li class="font-weight-400 text-dark-green">Further contact details can be found at <a
+                            href="golobe.com/help">golobe.com/help</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="bg-primary">
+            <div class="subsribe-seciton bg-light-green">
+                <div class="left-content">
+                    <h3 class="title font-weight-700 text-dark-green">Subscribe <br> Newsletter</h3>
+                    <p class="sub-title font-weight-700 text-dark-green">The Travel</p>
+                    <p class="content font-weight-500 text-dark-green">Get inspired! Receive travel discounts, tips and
+                        behind the scenes stories.</p>
+                    <div class="subcribe-form">
+                        <input type="text" placeholder="Your email address" class="input-box">
+                        <a href="#" class="btn bg-dark text-white font-weight-600">Subscribe</a>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <img src="./images/footer-mailbox.png" alt="mailbox-img" class="subcribe-img">
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-images">
+                    <img src="./images/footer-logo.svg" alt="footer-logo" class="footer-logo">
+                    <div class="footer-icons">
+                        <a href="#" class="text-dark-green"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-dark-green"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-dark-green"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="text-dark-green"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-link">
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">France</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Iceland</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="list-title text-dark-green font-weight-700">Our Destinations</li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Canada</a></li>
+                        <li><a href="#" class="text-dark-green font-weight-500">Alaksa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/html2pdf.bundle.min.js"></script>
+    <script src="./js/ticker.js"></script>
+</body>
+
+</html>
